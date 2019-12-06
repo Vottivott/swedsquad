@@ -29,7 +29,7 @@ for i,article in enumerate(sorted(data['data'], key=lambda article: article['tit
             skipped = 0
     n_questions = 0
     t0 = time.time()
-    print("Translating article %d/%d (%s)" % (i, n_articles, article['title']))
+    print("Translating article %d/%d (%s)" % (i+1, n_articles+1, article['title']))
     to_translate = []
     n_paragraphs = len(article['paragraphs'])
     t_i = 0
@@ -39,21 +39,21 @@ for i,article in enumerate(sorted(data['data'], key=lambda article: article['tit
             assert(len(translated) == len(to_translate))
         for p in article['paragraphs']:
             context = p['context']
-            questions = [qa['question'] for qa in p['qas']]
-            n_questions += len(questions)
+            qas = [qa for qa in p['qas']]
+            n_questions += len(qas)
             if mode == 'write':
                 assert p['context'] == to_translate[t_i]
-                p['context'] = translated[t_i].text
+                p['translated_context'] = translated[t_i].text
                 t_i += 1
             else:
                 to_translate.append(context)
-            for q_i, question in enumerate(questions):
+            for q_i, qa in enumerate(qas):
                 if mode == 'write':
-                    assert questions[q_i] == to_translate[t_i]
-                    questions[q_i] = translated[t_i].text
+                    assert qas[q_i]['question'] == to_translate[t_i]
+                    qas[q_i]['translated_question'] = translated[t_i].text
                     t_i += 1
                 else:
-                    to_translate.append(question)
+                    to_translate.append(qas[q_i]['question'])
     article['translated'] = True
     print("Translated %d paragraphs and %d questions from 1 article in %.2f seconds" % (n_paragraphs, n_questions, time.time()-t0))
     t0 = time.time()
