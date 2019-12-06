@@ -1,0 +1,3 @@
+- Om det redan finns citationstecken i texten borde dessa läggas till i listan över citeringar och hoppas över i rekonstruktionen
+
+- json till xls, xls till json
