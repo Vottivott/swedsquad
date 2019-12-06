@@ -1,7 +1,8 @@
 import json
 
 #fname = "train-v2.0.json"
-fname = "dev-v2.0.json"
+#fname = "dev-v2.0.json"
+fname = 'translated_dev-v2.0 04.50.54.481034 PM on December 06, 2019.json'
 with open(fname,"r") as f:
     data = json.loads(f.read())['data']
 
@@ -17,7 +18,10 @@ questions = []
 num_questions = []
 num_problematic = 0
 num_quote_containing = 0
+num_translated_articles = 0
 for article in data:
+    if 'translated' in article and article['translated']:
+        num_translated_articles+=1
     for p in article['paragraphs']:
         context = p['context']
         qas = p['qas']
@@ -80,6 +84,7 @@ print("Number of paragraphs: %d" % len(num_questions))
 print("Avg. num questions per paragraph: %.2f" % (sum(num_questions)/len(num_questions)))
 print("Number of problematic paragraphs: %d (%.2f %%)" % (num_problematic, 100*(num_problematic/len(num_questions))))
 print("Number of quote-containing paragraphs: %d (%.2f %%)" % (num_quote_containing, 100*(num_quote_containing/len(num_questions))))
+print("Number of translated articles: %d (%.2f %%)" % (num_translated_articles, 100*(num_translated_articles/len(data))))
 import matplotlib.pyplot as plt
 plt.hist(num_questions)
 plt.show()

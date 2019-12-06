@@ -58,5 +58,5 @@ for i,article in enumerate(sorted(data['data'], key=lambda article: article['tit
     print("Translated %d paragraphs and %d questions from 1 article in %.2f seconds" % (n_paragraphs, n_questions, time.time()-t0))
     t0 = time.time()
     with open(outname + ".json", "w") as out:
-        out.write(json.dump(data, out))
+        json.dump(data, out)
     print("Updated file " + outname + ".json in %.2f seconds" % (time.time()-t0))
