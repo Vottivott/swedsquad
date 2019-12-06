@@ -1,6 +1,7 @@
 import json
 
-fname = "train-v2.0.json"
+#fname = "train-v2.0.json"
+fname = "dev-v2.0.json"
 with open(fname,"r") as f:
     data = json.loads(f.read())['data']
 
@@ -23,6 +24,9 @@ for article in data:
         for qa in qas:
             questions.append(qa['question'])
         num_questions.append(len(qas))
+
+        if context.find("\n") != -1:
+            print("!")
 
         txt = " "*len(context)
         positions = []
