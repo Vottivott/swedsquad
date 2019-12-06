@@ -19,7 +19,7 @@ with open(name+".json","r") as f:
 
 n_articles = len(data['data'])
 skipped = 0
-for i,article in enumerate(sorted(data['data'])):
+for i,article in enumerate(sorted(data['data'], key=lambda article: article['title'])):
     if 'translated' in article and article['translated'] == True:
         skipped += 1
         continue
@@ -29,7 +29,7 @@ for i,article in enumerate(sorted(data['data'])):
             skipped = 0
     n_questions = 0
     t0 = time.time()
-    print("Translating article %d/%d" % (i, n_articles))
+    print("Translating article %d/%d (%s)" % (i, n_articles, article['title']))
     to_translate = []
     n_paragraphs = len(article['paragraphs'])
     t_i = 0
