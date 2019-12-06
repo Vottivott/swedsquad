@@ -19,24 +19,30 @@ with open(name+".json","r") as f:
 
 n_articles = len(data['data'])
 skipped = 0
-for i,article in enumerate(sorted(data['data'], key=lambda article: article['title'])):
-    if 'translated' in article and article['translated'] == True:
-        skipped += 1
-        continue
-    else:
-        if skipped > 0:
-            print("Skipped %d already translated articles" % skipped)
-            skipped = 0
-    n_questions = 0
-    t0 = time.time()
-    print("Translating article %d/%d (%s)" % (i+1, n_articles+1, article['title']))
-    to_translate = []
-    n_paragraphs = len(article['paragraphs'])
-    t_i = 0
-    for mode in ['read', 'write']:
-        if mode == 'write':
-            translated = translator.translate(to_translate, src='en', dest='sv')
-            assert(len(translated) == len(to_translate))
+
+n_questions = 0
+t0 = time.time()
+to_translate = []
+t_i = 0
+for mode in ['read', 'write']:
+    if mode == 'write':
+        translated = translator.translate(to_translate, src='en', dest='sv')
+        assert (len(translated) == len(to_translate))
+    for i,article in enumerate(sorted(data['data'], key=lambda article: article['title'])):
+        if False:
+            if 'translated' in article and article['translated'] == True:
+                skipped += 1
+                continue
+            else:
+                if skipped > 0:
+                    print("Skipped %d already translated articles" % skipped)
+                    skipped = 0
+            n_questions = 0
+            t0 = time.time()
+            print("Translating article %d/%d (%s)" % (i+1, n_articles+1, article['title']))
+            to_translate = []
+            n_paragraphs = len(article['paragraphs'])
+            t_i = 0
         for p in article['paragraphs']:
             context = p['context']
             qas = [qa for qa in p['qas']]
@@ -54,8 +60,15 @@ for i,article in enumerate(sorted(data['data'], key=lambda article: article['tit
                     t_i += 1
                 else:
                     to_translate.append(qas[q_i]['question'])
-    article['translated'] = True
-    print("Translated %d paragraphs and %d questions from 1 article in %.2f seconds" % (n_paragraphs, n_questions, time.time()-t0))
+                for a_i, ans in enumerate(qa['answers']):
+                    if mode == 'write':
+                        assert qa['answers'][a_i]['text'] == to_translate[t_i]
+                        qa['answers'][a_i]['translated_text'] = translated[t_i].text
+                        t_i += 1
+                    else:
+                        to_translate.append(qa['answers'][a_i]['text'])
+        article['translated'] = True
+    #print("Translated %d paragraphs and %d questions from 1 article in %.2f seconds" % (n_paragraphs, n_questions, time.time()-t0))
     t0 = time.time()
     with open(outname + ".json", "w") as out:
         json.dump(data, out)
