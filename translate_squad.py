@@ -17,11 +17,9 @@ outname = "translated_" + name + " " + date
 with open(name+".json","r") as f:
     data = json.loads(f.read())
 
-data['data'] = sorted(data['data'])
-
 n_articles = len(data['data'])
 skipped = 0
-for i,article in enumerate(data['data']):
+for i,article in enumerate(sorted(data['data'])):
     if 'translated' in article and article['translated'] == True:
         skipped += 1
         continue
