@@ -2,7 +2,7 @@ import json
 
 #fname = "train-v2.0.json"
 #fname = "dev-v2.0.json"
-fname = 'translated_dev-v2.0 05.27.10.927642 PM on December 06, 2019.json'
+fname = 'translated_dev-v2.0 06.35.01.949109 PM on December 06, 2019.json'
 with open(fname,"r") as f:
     data = json.loads(f.read())['data']
 
@@ -27,7 +27,9 @@ for article in data:
         qas = p['qas']
         for qa in qas:
             questions.append(qa['question'])
-            #print(qa['translated_question'])
+            print(qa['question'])
+            print(qa['translated_question'])
+            print()
         num_questions.append(len(qas))
 
         if context.find("\n") != -1:
