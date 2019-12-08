@@ -10,7 +10,7 @@ args = """--model_type xlm
     --num_train_epochs 2 
     --max_seq_length 384 
     --doc_stride 128 
-    --output_dir ml_bert
+    --output_dir xlm
     --per_gpu_eval_batch_size=3   
     --per_gpu_train_batch_size=3   
     --save_steps=2000 
