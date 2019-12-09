@@ -272,13 +272,14 @@ def evaluate(args, model, tokenizer, prefix=""):
     else:
         output_null_log_odds_file = None
 
-    # Hannes: Fix missing attribute
-    if hasattr(tokenizer, 'do_lowercase_and_remove_accent') and not hasattr(tokenizer, 'do_lowercase'):
-        tokenizer.do_lowercase = tokenizer.do_lowercase_and_remove_accent
-        print("Added missing attribute do_lowercase = " + str(tokenizer.do_lowercase))
-    else:
-        print("Did not add missing attribute do_lowercase = " + str(tokenizer.do_lowercase))
     if args.model_type in ['xlnet', 'xlm']: # XLNet uses a more complex post-processing procedure
+        # Hannes: Fix missing attribute
+        if hasattr(tokenizer, 'do_lowercase_and_remove_accent') and not hasattr(tokenizer, 'do_lower_case'):
+            tokenizer.do_lower_case = tokenizer.do_lowercase_and_remove_accent
+            print("Added missing attribute do_lower_case = " + str(tokenizer.do_lower_case))
+        else:
+            print("Did not add missing attribute do_lower_case = " + str(tokenizer.do_lower_case))
+
         write_predictions_extended(examples, features, all_results, args.n_best_size,
                         args.max_answer_length, output_prediction_file,
                         output_nbest_file, output_null_log_odds_file, args.predict_file,
