@@ -1,9 +1,9 @@
 import json
 
-#fname = "train-v2.0.json"
+fname = "train-v2.0.json"
 #fname = "dev-v2.0.json"
 #fname = 'translated_dev-v2.0 06.35.01.949109 PM on December 06, 2019.json'
-fname = 'translated_train-v2.0 01.28.26.007134 AM on December 07, 2019.json'
+#fname = 'translated_train-v2.0 01.28.26.007134 AM on December 07, 2019.json'
 with open(fname,"r") as f:
     data = json.loads(f.read())['data']
 
@@ -59,7 +59,7 @@ for article in data:
                if (s,e) != (start,end):
                    if s < start < e and end > e:
                         num_more_problematic += 1
-                        print(context)
+                        #print(context)
 
         include_existing_quotes = False
         if include_existing_quotes:
