@@ -1,6 +1,25 @@
 from googletrans import Translator
 
+from html_parser import get_answers_and_answer_starts, strip_html_tags
+
 translator = Translator()
+
+def get_questions(qas):
+    positions = []
+    questions = []
+    for qa in qas:
+        if len(qa['answers']) == 0:
+            continue
+        for a in qa['answers']:
+            span = (a['answer_start'], a['answer_start'] + len(a['text']))
+            if span not in positions:
+                positions.append(span)
+                questions.append((qa['question'],qa['translated_question']))
+    s = ""
+    for i,(en,sv) in enumerate(questions):
+        s+=str(i)+") " + sv + "//" + en + "//\\\\"
+        s+="\n"
+    return s
 
 def get_html(paragraph, qas):
     positions = []
@@ -79,15 +98,48 @@ def get_html(paragraph, qas):
     #print()
     return txt
 
+def interpret_html(html, paragraph, qas):
+    positions = []
+    span_id = {}
+    for q_i, qa in enumerate(qas):
+        if len(qa['answers']) == 0:
+            continue
+        for a_i,a in enumerate(qa['answers']):
+            span = (a['answer_start'], a['answer_start'] + len(a['text']))
+            if span not in positions:
+                positions.append(span)
+            span_id[(q_i, a_i)] = positions.index(span)
+
+    txt = paragraph#" " * len(paragraph)
+
+    # Done: If a span has been split into multiple, take the start of the earliest one and the end of the last one
+    # TODO: Remove untranslated answers where impossible=False, or questions with no translated answers
+    answer_text, answer_start = get_answers_and_answer_starts(html)
+
+    for q_i, qa in enumerate(qas):
+        if len(qa['answers']) == 0:
+            continue
+        for a_i,a in enumerate(qa['answers']):
+            span = (a['answer_start'], a['answer_start'] + len(a['text']))
+            id = span_id[(q_i, a_i)]
+            if id not in answer_start:
+                continue # Skipped because problematic
+            a['translated_answer_start'] = answer_start[id]
+            a['translated_text'] = answer_text[id]
+            #print(a['text'])
+            #print(a['translated_text'])
+
 
 import json
 import datetime
 import time
 
 #fname = "train-v2.0"
-name = "dev-v2.0"
+#name = "dev-v2.0"
 #name = "train-v2.0"
 #name = "translated_dev-v2.0 no answers"
+#name = "translated_train-v2.0 no answers"
+name = "translated dev exclude problematic"
 date = datetime.datetime.now().strftime("%I.%M.%S.%f %p on %B %d, %Y")
 outname = "translated_" + name + " " + date
 with open(name+".json","r", encoding="utf-8") as f:
@@ -102,10 +154,10 @@ n_questions = 0
 t0 = time.time()
 to_translate = []
 t_i = 0
-for mode in ['write']:#['read', 'write']:
+for mode in ['read']:#, 'write']:#['read', 'write']:
 #for mode in ['read', 'write']:
     if mode == 'write':
-        with open("translated train no answers.txt", encoding="utf-8") as f:
+        with open("translated dev html.txt", encoding="utf-8") as f:
             translated = f.read().splitlines()
         assert (len(translated) == len(to_translate))
     paragraph_index = 0
@@ -115,11 +167,20 @@ for mode in ['write']:#['read', 'write']:
             qas = [qa for qa in p['qas']]
             n_questions += len(qas)
             if mode == 'write':
-                assert p['context'] == to_translate[t_i]
-                p['translated_context'] = translated[t_i]#.text
-                t_i += 1
-            else:
                 html = ("<div id=\"%d\">" % paragraph_index) + get_html(context, qas) + "</div>"
+                assert html == to_translate[t_i]
+                p['translated_context_html_exclude_problematic'] = translated[t_i]#.text
+                p['context_html_exclude_problematic'] = html#.text
+                t_i += 1
+
+                #to_translate.append(html)
+                paragraph_index += 1
+            else:
+                #html = ("<div id=\"%d\">" % paragraph_index) + get_html(context, qas) + "</div>"
+                html = p['translated_context_html_exclude_problematic']
+                p['translated_context_cloud'] = strip_html_tags(html)
+                interpret_html(html, context, qas)
+                #to_translate.append(get_questions(qas))
                 to_translate.append(html)
                 paragraph_index += 1
             include_questions = False
@@ -140,13 +201,13 @@ for mode in ['write']:#['read', 'write']:
                             else:
                                 to_translate.append(qa['answers'][a_i]['text'])
         #article['translated'] = True
-    if mode == "write":
+    if True:#mode == "write":
         t0 = time.time()
         with open(outname + ".json", "w") as out:
            json.dump(data, out)
         print("Updated file " + outname + ".json in %.2f seconds" % (time.time()-t0))
-    with open("to_translate.txt","w", encoding="utf-8") as out:
-        out.write("\n".join([txt.replace("\n"," ") for txt in to_translate]))
+    #with open("to_translate.txt","w", encoding="utf-8") as out:
+    #    out.write("\n".join([txt.replace("\n"," ") for txt in to_translate]))
     #print(len(to_translate))
 
 

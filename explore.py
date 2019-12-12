@@ -1,11 +1,15 @@
 import json
 
-fname = "train-v2.0.json"
+#fname = "train-v2.0.json"
+#fname = "dev-v2.0.json"
+fname = "translated dev using google cloud html.json"
+#fname = "sv_squad_dev.json"
 with open(fname,"r") as f:
     data = json.loads(f.read())['data']
 
 
-article = data[4]
+article = data[0]
+#article = data[2]
 title = article['title']
 paragraphs = article['paragraphs']
 print(title)
@@ -16,7 +20,7 @@ for p in paragraphs:
     qas = p['qas']
     qa = qas[0]
     question = qa['question']
-    impossible = qa['is_impossible']
+    #impossible = qa['is_impossible']
     ans = qa['answers'][0]
     ans_text = ans['text']
     ans_start = ans['answer_start']
@@ -29,6 +33,7 @@ for p in paragraphs:
             #print(":(")
             continue
         a = qa['answers'][0]
+        print(a['text'])
         positions.append((a['answer_start'],a['answer_start']+len(a['text'])))
     positions = list(set(positions))
     for start,end in positions:
@@ -54,8 +59,9 @@ for p in paragraphs:
             break
         i+=1
     print(quoted3)
-    #print(quoted3.replace('❝',"<span>", 1).replace('❞',"</span>", 1))
     print()
+
+    #print(quoted3.replace('❝',"<span>", 1).replace('❞',"</span>", 1))
     #print(p['context'])
     #print()
     #print()

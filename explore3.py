@@ -1,9 +1,10 @@
 import json
 
-fname = "train-v2.0.json"
+#fname = "train-v2.0.json"
 #fname = "dev-v2.0.json"
 #fname = 'translated_dev-v2.0 06.35.01.949109 PM on December 06, 2019.json'
 #fname = 'translated_train-v2.0 01.28.26.007134 AM on December 07, 2019.json'
+fname = "translated dev exclude problematic.json"
 with open(fname,"r") as f:
     data = json.loads(f.read())['data']
 
@@ -29,6 +30,11 @@ for article in data:
         num_translated_articles+=1
     for p in article['paragraphs']:
         context = p['context']
+        #print(p['context_html_exclude_problematic'])
+        #print()
+        #print(p['translated_context_html_exclude_problematic'])
+        #print()
+        #print()
         qas = p['qas']
         for qa in qas:
             questions.append(qa['question'])
@@ -50,6 +56,10 @@ for article in data:
                 num_mult_answers += 1
                 #print(len(qa['answers']))
             #a = qa['answers'][0]
+            s = qa['answers'][0]['answer_start']
+            e = s+len(qa['answers'][0]['text'])
+            print(context[s:e])
+            print(qa['answers'][0]['text'])
             num_answers += len(qa['answers'])
             for a in qa['answers']:
                 positions.append((a['answer_start'], a['answer_start'] + len(a['text'])))
@@ -105,6 +115,7 @@ print("Number of paragraphs: %d" % len(num_questions))
 print("Avg. num questions per paragraph: %.2f" % (sum(num_questions)/len(num_questions)))
 print("Number of problematic paragraphs: %d (%.2f %%)" % (num_problematic, 100*(num_problematic/len(num_questions))))
 print("Number of more problematic answers: %d (%.2f %%)" % (num_more_problematic, 100*(num_more_problematic/num_answers)))
+print("Number of answers: %d" % num_answers)
 print("Number of quote-containing paragraphs: %d (%.2f %%)" % (num_quote_containing, 100*(num_quote_containing/len(num_questions))))
 print("Number of weird-quote-containing paragraphs: %d (%.2f %%)" % (num_weird_quote_containing, 100*(num_weird_quote_containing/len(num_questions))))
 print("Number of translated articles: %d (%.2f %%)" % (num_translated_articles, 100*(num_translated_articles/len(data))))
