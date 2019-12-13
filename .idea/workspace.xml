@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57e8f9c5-0331-44c9-8c76-e8a494496ec6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/train_mlbert_sv_large.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eval_mlbert_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/eval_mlbert_en.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eval_mlbert_sv.py" beforeDir="false" afterPath="$PROJECT_DIR$/eval_mlbert_sv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eval_xlm_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/eval_xlm_en.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eval_xlm_sv.py" beforeDir="false" afterPath="$PROJECT_DIR$/eval_xlm_sv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/explore4.py" beforeDir="false" afterPath="$PROJECT_DIR$/explore4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results.txt" beforeDir="false" afterPath="$PROJECT_DIR$/results.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train_mlbert_sv_large.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_mlbert_sv_large.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/train_mlbert_sv_large.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+            <state relative-caret-position="102">
+              <caret line="6" column="63" lean-forward="true" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -39,7 +33,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>\n</find>
       <find>id</find>
       <find>div</find>
       <find>todo</find>
@@ -69,6 +62,7 @@
       <find>eval_all_</find>
       <find>overwrite</find>
       <find>gradient_</find>
+      <find>cased</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -365,7 +359,13 @@
       <option name="presentableId" value="LOCAL−00011" />
       <updated>1576256099641</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL−00012" summary="Add script for fine-tuning of the large Swedish BERT model">
+      <created>1576260193251</created>
+      <option name="number" value="LOCAL−00012" />
+      <option name="presentableId" value="LOCAL−00012" />
+      <updated>1576260193251</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -402,7 +402,8 @@
     <MESSAGE value="Add eval script for confident translated dev dataset" />
     <MESSAGE value="Add eval script for confident translated dev dataset for xlm" />
     <MESSAGE value="Add eval script" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add eval script" />
+    <MESSAGE value="Add script for fine-tuning of the large Swedish BERT model" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add script for fine-tuning of the large Swedish BERT model" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -696,13 +697,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run_squad.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="409" column="25" lean-forward="true" selection-start-line="409" selection-start-column="25" selection-end-line="409" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/eval_mlbert_en.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
@@ -717,10 +711,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/run_squad.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="394" column="40" selection-start-line="394" selection-start-column="25" selection-end-line="394" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/train_mlbert_sv_large.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        <state relative-caret-position="102">
+          <caret line="6" column="63" lean-forward="true" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
         </state>
       </provider>
     </entry>

@@ -2,6 +2,7 @@ import run_squad
 
 args = """--model_type bert 
     --model_name_or_path swe-uncased_L-24_H-1024_A-16/
+    --do_lower_case
     --do_train 
     --train_file  confident_translated_train_no_impossible.json
     --predict_file confident_translated_dev_no_impossible.json
