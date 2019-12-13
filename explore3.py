@@ -10,6 +10,9 @@ fname ="confident translated dev.json"
 fname ="confident_translated_train.json"
 fname ="translated train answers translated.json"
 fname ="confident_translated_train_no_impossible.json"
+fname = "original_plus_confident_translated_train_no_impossible.json"
+#fname = "train-v2.0.json"
+
 with open(fname,"r") as f:
     data = json.loads(f.read())['data']
 num_answers_individually = []

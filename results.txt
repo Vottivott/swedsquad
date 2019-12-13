@@ -1,3 +1,29 @@
+Multilingual BERT Base
+----
+en: f1 = 88.4
+sv: f1 = 66.0
+
+XLM
+---
+en: f1 = 78.2
+sv: f1 = 58.6
+
+Svenska BERT Large
+------------
+sv: f1 = 54.9
+
+Svenska BERT Large
+Tränad på confident_train_no_impossible.json
+Evaluerad på confident_dev_no_impossible.json
+sv {
+  "exact": 43.71896722939424,
+  "f1": 54.88362162447766,
+  "total": 4028,
+  "HasAns_exact": 43.71896722939424,
+  "HasAns_f1": 54.88362162447766,
+  "HasAns_total": 4028
+}
+
 Multilingual BERT
 Tränad på engelska squad v1
 Evaluerad på confident_dev_no_impossible.json
