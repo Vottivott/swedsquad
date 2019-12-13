@@ -15,14 +15,19 @@ args = """--model_type xlm
     --save_steps=2000 
     """.split() # --eval_all_checkpoints
 
+import os
+import __main__ as main
+print("Script: " + os.path.basename(main.__file__))
 print(args)
 
 results = run_squad_fixed.main(args)
 import json
 import datetime
 date = datetime.datetime.now().strftime("%I.%M.%S.%f %p on %B %d, %Y")
-outname = "results " + " " + date
+
+outname = "results " + os.path.basename(main.__file__)[:-3] + " " + date
 with open(outname + ".json", "w") as out:
    json.dump(results, out)
 
 print(args)
+print("Script: " + os.path.basename(main.__file__))
