@@ -138,8 +138,10 @@ import time
 #name = "dev-v2.0"
 #name = "train-v2.0"
 #name = "translated_dev-v2.0 no answers"
-#name = "translated_train-v2.0 no answers"
-name = "translated dev exclude problematic"
+name = "translated_train-v2.0 no answers"
+#name = "translated dev exclude problematic"
+#name = "translated dev exclude problematic interpreted"
+#name = ""
 date = datetime.datetime.now().strftime("%I.%M.%S.%f %p on %B %d, %Y")
 outname = "translated_" + name + " " + date
 with open(name+".json","r", encoding="utf-8") as f:
@@ -148,16 +150,16 @@ with open(name+".json","r", encoding="utf-8") as f:
 n_articles = len(data['data'])
 skipped = 0
 
-translate_answers = False
+translate_answers = True
 
 n_questions = 0
 t0 = time.time()
 to_translate = []
 t_i = 0
-for mode in ['read']:#, 'write']:#['read', 'write']:
+for mode in ['read', 'write']:#['read', 'write']:
 #for mode in ['read', 'write']:
     if mode == 'write':
-        with open("translated dev html.txt", encoding="utf-8") as f:
+        with open("translated train answers.txt", encoding="utf-8") as f:
             translated = f.read().splitlines()
         assert (len(translated) == len(to_translate))
     paragraph_index = 0
@@ -166,32 +168,34 @@ for mode in ['read']:#, 'write']:#['read', 'write']:
             context = p['context']
             qas = [qa for qa in p['qas']]
             n_questions += len(qas)
-            if mode == 'write':
-                html = ("<div id=\"%d\">" % paragraph_index) + get_html(context, qas) + "</div>"
-                assert html == to_translate[t_i]
-                p['translated_context_html_exclude_problematic'] = translated[t_i]#.text
-                p['context_html_exclude_problematic'] = html#.text
-                t_i += 1
+            if False:
+                if mode == 'write':
+                    html = ("<div id=\"%d\">" % paragraph_index) + get_html(context, qas) + "</div>"
+                    assert html == to_translate[t_i]
+                    p['translated_context_html_exclude_problematic'] = translated[t_i]#.text
+                    p['context_html_exclude_problematic'] = html#.text
+                    t_i += 1
 
-                #to_translate.append(html)
-                paragraph_index += 1
-            else:
-                #html = ("<div id=\"%d\">" % paragraph_index) + get_html(context, qas) + "</div>"
-                html = p['translated_context_html_exclude_problematic']
-                p['translated_context_cloud'] = strip_html_tags(html)
-                interpret_html(html, context, qas)
-                #to_translate.append(get_questions(qas))
-                to_translate.append(html)
-                paragraph_index += 1
-            include_questions = False
+                    #to_translate.append(html)
+                    paragraph_index += 1
+                else:
+                    #html = ("<div id=\"%d\">" % paragraph_index) + get_html(context, qas) + "</div>"
+                    html = p['translated_context_html_exclude_problematic']
+                    p['translated_context_cloud'] = strip_html_tags(html)
+                    interpret_html(html, context, qas)
+                    #to_translate.append(get_questions(qas))
+                    to_translate.append(html)
+                    paragraph_index += 1
+            include_questions = True
             if include_questions:
                 for q_i, qa in enumerate(qas):
-                    if mode == 'write':
-                        assert qas[q_i]['question'] == to_translate[t_i]
-                        qas[q_i]['translated_question'] = translated[t_i]#.text
-                        t_i += 1
-                    else:
-                        to_translate.append(qas[q_i]['question'])
+                    if False:
+                        if mode == 'write':
+                            assert qas[q_i]['question'] == to_translate[t_i]
+                            qas[q_i]['translated_question'] = translated[t_i]#.text
+                            t_i += 1
+                        else:
+                            to_translate.append(qas[q_i]['question'])
                     if translate_answers:
                         for a_i, ans in enumerate(qa['answers']):
                             if mode == 'write':
@@ -201,14 +205,14 @@ for mode in ['read']:#, 'write']:#['read', 'write']:
                             else:
                                 to_translate.append(qa['answers'][a_i]['text'])
         #article['translated'] = True
-    if True:#mode == "write":
+    if mode == "write":
         t0 = time.time()
         with open(outname + ".json", "w") as out:
            json.dump(data, out)
         print("Updated file " + outname + ".json in %.2f seconds" % (time.time()-t0))
-    #with open("to_translate.txt","w", encoding="utf-8") as out:
-    #    out.write("\n".join([txt.replace("\n"," ") for txt in to_translate]))
-    #print(len(to_translate))
+    with open("to_translate.txt","w", encoding="utf-8") as out:
+        out.write("\n".join([txt.replace("\n"," ") for txt in to_translate]))
+    print(len(to_translate))
 
 
 

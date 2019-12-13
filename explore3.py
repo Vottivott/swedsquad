@@ -1,12 +1,18 @@
 import json
 
-#fname = "train-v2.0.json"
+fname = "train-v2.0.json"
 #fname = "dev-v2.0.json"
 #fname = 'translated_dev-v2.0 06.35.01.949109 PM on December 06, 2019.json'
 #fname = 'translated_train-v2.0 01.28.26.007134 AM on December 07, 2019.json'
-fname = "translated dev exclude problematic.json"
+#fname = "translated dev exclude problematic.json"
+fname ="translated dev answers translated.json"
+fname ="confident translated dev.json"
+fname ="confident_translated_train.json"
+fname ="translated train answers translated.json"
+fname ="confident_translated_train_no_impossible.json"
 with open(fname,"r") as f:
     data = json.loads(f.read())['data']
+num_answers_individually = []
 
 
 article = data[4]
@@ -25,6 +31,7 @@ num_translated_articles = 0
 num_mult_answers = 0
 num_more_problematic = 0
 num_answers = 0
+num_answerable_questions = 0
 for article in data:
     if 'translated' in article and article['translated']:
         num_translated_articles+=1
@@ -49,6 +56,8 @@ for article in data:
         txt = " "*len(context)
         positions = []
         for qa in qas:
+            if not qa['is_impossible']:
+                num_answerable_questions += 1
             if len(qa['answers']) == 0:
                 # print(":(")
                 continue
@@ -58,10 +67,14 @@ for article in data:
             #a = qa['answers'][0]
             s = qa['answers'][0]['answer_start']
             e = s+len(qa['answers'][0]['text'])
-            print(context[s:e])
-            print(qa['answers'][0]['text'])
+            #print(context[s:e])
+            #print(qa['answers'][0]['text'])
             num_answers += len(qa['answers'])
+            num_answers_individually.append(len(qa['answers']))
+
             for a in qa['answers']:
+                #print(a['text'])
+                #print(a['translated_text'])
                 positions.append((a['answer_start'], a['answer_start'] + len(a['text'])))
 
         for start,end in positions:
@@ -120,6 +133,8 @@ print("Number of quote-containing paragraphs: %d (%.2f %%)" % (num_quote_contain
 print("Number of weird-quote-containing paragraphs: %d (%.2f %%)" % (num_weird_quote_containing, 100*(num_weird_quote_containing/len(num_questions))))
 print("Number of translated articles: %d (%.2f %%)" % (num_translated_articles, 100*(num_translated_articles/len(data))))
 print("Number of multi-answer questions: %d (%.2f %%)" % (num_mult_answers, 100*(num_mult_answers/sum(num_questions))))
+print("Number of possible questions: %d (%.2f %%)" % (num_answerable_questions, 100*((num_answerable_questions)/sum(num_questions))))
+
 import matplotlib.pyplot as plt
-plt.hist(num_questions)
+plt.hist(num_answers_individually)
 plt.show()

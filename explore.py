@@ -4,7 +4,9 @@ import json
 #fname = "dev-v2.0.json"
 fname = "translated dev using google cloud html.json"
 #fname = "sv_squad_dev.json"
-with open(fname,"r") as f:
+fname = "swe-squad-1.json"
+#fname ="confident translated dev.json"
+with open(fname,"r", encoding="utf-8") as f:
     data = json.loads(f.read())['data']
 
 
