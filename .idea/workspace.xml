@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57e8f9c5-0331-44c9-8c76-e8a494496ec6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/confident_translated_dev.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/confident_translated_dev_no_impossible.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/confident_translated_train.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/confident_translated_train_no_impossible.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eval_mlbert_sv.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/explore4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/explore.py" beforeDir="false" afterPath="$PROJECT_DIR$/explore.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/explore3.py" beforeDir="false" afterPath="$PROJECT_DIR$/explore3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/squad_cleaner.py" beforeDir="false" afterPath="$PROJECT_DIR$/squad_cleaner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/squad_iterator.py" beforeDir="false" afterPath="$PROJECT_DIR$/squad_iterator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,10 +13,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/eval_mlbert_sv.py">
+        <entry file="file://$PROJECT_DIR$/results.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+            <state relative-caret-position="187">
+              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -110,6 +100,7 @@
         <option value="$PROJECT_DIR$/explore3.py" />
         <option value="$PROJECT_DIR$/run_squad.py" />
         <option value="$PROJECT_DIR$/eval_mlbert_sv.py" />
+        <option value="$PROJECT_DIR$/results.txt" />
       </list>
     </option>
   </component>
@@ -338,7 +329,13 @@
       <option name="presentableId" value="LOCAL−00007" />
       <updated>1576017761170</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL−00008" summary="Add eval script for confident translated dev dataset">
+      <created>1576254479334</created>
+      <option name="number" value="LOCAL−00008" />
+      <option name="presentableId" value="LOCAL−00008" />
+      <updated>1576254479334</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -372,7 +369,8 @@
     <MESSAGE value="Fix missing attribute do_lowercase in XLMTokenizer" />
     <MESSAGE value="Fix" />
     <MESSAGE value="Add squad iterator" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add squad iterator" />
+    <MESSAGE value="Add eval script for confident translated dev dataset" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add eval script for confident translated dev dataset" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -656,6 +654,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
         </state>
       </provider>
     </entry>
