@@ -10,3 +10,15 @@ sv {
   "HasAns_f1": 65.97080553517661,
   "HasAns_total": 4028
 }
+
+XLM
+Tränad på engelska squad v1
+Evaluerad på confident_dev_no_impossible.json
+sv {
+  "exact": 45.729890764647465,
+  "f1": 58.59368844558047,
+  "total": 4028,
+  "HasAns_exact": 45.729890764647465,
+  "HasAns_f1": 58.59368844558047,
+  "HasAns_total": 4028
+}
