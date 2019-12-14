@@ -2,7 +2,7 @@ import run_squad
 
 args = """--model_type bert 
     --model_name_or_path bert-base-multilingual-cased
-    --do_evaulate
+    --do_eval
     --train_file original_plus_confident_translated_train_no_impossible.json
     --predict_file confident_translated_dev_no_impossible.json
     --learning_rate 3e-5 
