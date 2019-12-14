@@ -12,9 +12,14 @@ fname ="translated train answers translated.json"
 fname ="confident_translated_train_no_impossible.json"
 fname = "original_plus_confident_translated_train_no_impossible.json"
 fname = "confident_plus_ot_train_no_impossible.json"
-#fname = "train-v2.0.json"
+fname = "train-v2.0.json"
+fname = "DRCD_training.json"
+fname = "translated_en_plus_all_sv_plus_chinese_train_only.json"
+fname = "DRCD_dev.json"
+fname = "DRCD_test.json"
+fname = "translated_en_plus_all_sv_plus_chinese.json"
 
-with open(fname,"r") as f:
+with open(fname,"r", encoding='utf-8') as f:
     data = json.loads(f.read())['data']
 num_answers_individually = []
 
@@ -60,7 +65,7 @@ for article in data:
         txt = " "*len(context)
         positions = []
         for qa in qas:
-            if not qa['is_impossible']:
+            if 'is_impossible' not in qa or not qa['is_impossible']:
                 num_answerable_questions += 1
             if len(qa['answers']) == 0:
                 # print(":(")

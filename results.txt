@@ -3,7 +3,11 @@ Multilingual BERT Base
   en: f1 = 88.4
   sv: f1 = 66.0
 ---- tränad på eng + naiv sv:
-  sv: f1 = 73.6
+  sv: f1 = 73.6 (exact = 62.7)
+---- tränad på eng + naiv sv + ot sv:
+  sv: f1 = 74.1 (exact = 61.7)
+---- tränad på naiv sv:
+  sv: f1 = 72.8 (exact = 62.3)
 
 XLM
 ---
@@ -13,6 +17,8 @@ sv: f1 = 58.6
 Svenska BERT Large
 ------------
 sv: f1 = 54.9
+
+
 
 
 Svenska BERT Large
@@ -62,6 +68,30 @@ sv {
   "total": 4028,
   "HasAns_exact": 62.735849056603776,
   "HasAns_f1": 73.60848445554556,
+  "HasAns_total": 4028
+}
+
+Multilingual BERT
+Tränad på original_plus_confident_plus_ot_train_no_impossible.json
+Evaluerad på confident_dev_no_impossible.json
+sv {
+  "exact": 61.66832174776564,
+  "f1": 74.13877495401488,
+  "total": 4028,
+  "HasAns_exact": 61.66832174776564,
+  "HasAns_f1": 74.13877495401488,
+  "HasAns_total": 4028
+}
+
+Multilingual BERT
+Tränad endast på svenska: confident_train_no_impossible.json
+Evaluerad på confident_dev_no_impossible.json
+sv {
+  "exact": 62.264150943396224,
+  "f1": 72.77527655234991,
+  "total": 4028,
+  "HasAns_exact": 62.264150943396224,
+  "HasAns_f1": 72.77527655234991,
   "HasAns_total": 4028
 }
 
