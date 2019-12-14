@@ -4,7 +4,7 @@ args = """--model_type bert
     --model_name_or_path swe-uncased_L-24_H-1024_A-16/
     --do_lower_case
     --do_eval 
-    --train_file  confident_translated_train_no_impossible.json
+    --train_file confident_plus_ot_train_no_impossible.json
     --predict_file confident_translated_dev_no_impossible.json
     --learning_rate 3e-5 
     --num_train_epochs 2 

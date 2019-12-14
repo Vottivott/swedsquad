@@ -27,6 +27,12 @@ sv {
   "HasAns_total": 4028
 }
 
+Svenska BERT Large
+Tränad på original_plus_confident_translated_train_no_impossible.json
+Evaluerad på confident_dev_no_impossible.json
+
+
+
 Multilingual BERT
 Tränad på engelska squad v1
 Evaluerad på confident_dev_no_impossible.json
