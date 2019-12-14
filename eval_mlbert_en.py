@@ -13,6 +13,7 @@ args = """--model_type bert
     --per_gpu_eval_batch_size=3   
     --per_gpu_train_batch_size=3   
     --save_steps=2000 
+    --overwrite_cache
     """.split() # --eval_all_checkpoints
 
 import os

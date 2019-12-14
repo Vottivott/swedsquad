@@ -11,7 +11,8 @@ args = """--model_type bert
     --doc_stride 128 
     --output_dir ml_bert_en_plus_sv
     --per_gpu_eval_batch_size=3   
-    --per_gpu_train_batch_size=3   
+    --per_gpu_train_batch_size=3 
+    --overwrite_cache  
     --save_steps=2000 
     """.split() # --eval_all_checkpoints
 
