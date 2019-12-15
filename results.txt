@@ -3,10 +3,15 @@ Multilingual BERT Base
   en: f1 = 88.4
   sv: f1 = 66.0
 ---- tränad på eng + naiv sv:
+  en: f1 = 88.3
   sv: f1 = 73.6 (exact = 62.7)
 ---- tränad på eng + naiv sv + ot sv:
+  en: f1 = 88.3
   sv: f1 = 74.1 (exact = 61.7)
+---- tränad på eng + naiv sv + ot sv + kinesiska:
+  sv: f1 = 74.2 (exact = 61.9)
 ---- tränad på naiv sv:
+  en: f1 = 83.3
   sv: f1 = 72.8 (exact = 62.3)
 
 XLM
@@ -70,6 +75,14 @@ sv {
   "HasAns_f1": 73.60848445554556,
   "HasAns_total": 4028
 }
+en {
+  "exact": 81.47587511825922,
+  "f1": 88.25021948697494,
+  "total": 10570,
+  "HasAns_exact": 81.47587511825922,
+  "HasAns_f1": 88.25021948697494,
+  "HasAns_total": 10570
+}
 
 Multilingual BERT
 Tränad på original_plus_confident_plus_ot_train_no_impossible.json
@@ -82,6 +95,14 @@ sv {
   "HasAns_f1": 74.13877495401488,
   "HasAns_total": 4028
 }
+en {
+  "exact": 80.91769157994324,
+  "f1": 88.27450836871422,
+  "total": 10570,
+  "HasAns_exact": 80.91769157994324,
+  "HasAns_f1": 88.27450836871422,
+  "HasAns_total": 10570
+}
 
 Multilingual BERT
 Tränad endast på svenska: confident_train_no_impossible.json
@@ -92,6 +113,27 @@ sv {
   "total": 4028,
   "HasAns_exact": 62.264150943396224,
   "HasAns_f1": 72.77527655234991,
+  "HasAns_total": 4028
+}
+en {
+  "exact": 74.54115421002838,
+  "f1": 83.33211286463714,
+  "total": 10570,
+  "HasAns_exact": 74.54115421002838,
+  "HasAns_f1": 83.33211286463714,
+  "HasAns_total": 10570
+}
+
+
+Multilingual BERT
+Tränad på train_en_plus_all_sv_plus_chinese.json (innehåller alltså både train och dev, men ej test, från kinesiska)
+Evaluerad på confident_dev_no_impossible.json
+sv {
+  "exact": 61.89175769612711,
+  "f1": 74.24182089914477,
+  "total": 4028,
+  "HasAns_exact": 61.89175769612711,
+  "HasAns_f1": 74.24182089914477,
   "HasAns_total": 4028
 }
 
