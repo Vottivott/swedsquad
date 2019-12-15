@@ -19,14 +19,14 @@ XLM
 en: f1 = 78.2
 sv: f1 = 58.6
 
-Svenska BERT Large
+Svenska BERT Large, uncased
 ------------
 sv: f1 = 54.9
 
 
 
 
-Svenska BERT Large
+Svenska BERT Large, uncased
 Tränad på confident_train_no_impossible.json
 Evaluerad på confident_dev_no_impossible.json
 sv {
@@ -38,7 +38,7 @@ sv {
   "HasAns_total": 4028
 }
 
-Svenska BERT Large
+Svenska BERT Large, uncased
 Tränad på original_plus_confident_translated_train_no_impossible.json
 Evaluerad på confident_dev_no_impossible.json
 
