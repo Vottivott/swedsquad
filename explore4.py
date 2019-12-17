@@ -15,8 +15,8 @@ fname = "train-v2.0.json"
 #fname = 'translated_dev-v2.0 06.35.01.949109 PM on December 06, 2019.json'
 #fname = 'translated_train-v2.0 01.28.26.007134 AM on December 07, 2019.json'
 #fname = "translated dev exclude problematic.json"
-fname ="translated dev answers translated.json"
 fname ="translated train answers translated.json"
+fname ="translated dev answers translated.json"
 #fname ="confident_translated_dev_no_impossible.json"
 #fname = "original_plus_confident_translated_train_no_impossible.json"
 
@@ -183,6 +183,7 @@ print("Avg number of naive answers for question: %.2f" % (num_naive_matches/num_
 #print("Avg number of naive answers for question: %.2f" % (sum(num_naive_matches)/len(num_answers_individually)))
 #print()
 print(set([len(id) for id in ids]))
+exit(0)
 import matplotlib.pyplot as plt
 plt.hist(translated_answer_matchcounts, bins=100, color='orange')
 plt.title("DEV: Number of perfect matches of translated answer in translated paragraph")

@@ -20,8 +20,18 @@ en: f1 = 78.2
 sv: f1 = 58.6
 
 Svenska BERT Large, uncased
-------------
-sv: f1 = 54.9
+---- tränad på naiv sv:
+  sv: f1 = 54.9
+---- tränad på naiv sv + ot sv:
+  sv: f1 = 58.2
+
+Svenska BERT Base, uncased
+---- tränad på naiv sv:
+  sv: f1 = 56.6
+---- tränad på naiv sv + ot sv:
+  sv: f1 = 60.8
+
+
 
 
 
@@ -41,8 +51,38 @@ sv {
 Svenska BERT Large, uncased
 Tränad på original_plus_confident_translated_train_no_impossible.json
 Evaluerad på confident_dev_no_impossible.json
+sv {
+  "exact": 45.233366434955315,
+  "f1": 58.223283256727825,
+  "total": 4028,
+  "HasAns_exact": 45.233366434955315,
+  "HasAns_f1": 58.223283256727825,
+  "HasAns_total": 4028
+}
 
+Svenska BERT Base, uncased
+Tränad på confident_train_no_impossible.json
+Evaluerad på confident_dev_no_impossible.json
+sv {
+  "exact": 44.68718967229394,
+  "f1": 56.63267930815542,
+  "total": 4028,
+  "HasAns_exact": 44.68718967229394,
+  "HasAns_f1": 56.63267930815542,
+  "HasAns_total": 4028
+}
 
+Svenska BERT Base, uncased
+Tränad på original_plus_confident_translated_train_no_impossible.json
+Evaluerad på confident_dev_no_impossible.json
+sv {
+  "exact": 47.02085402184707,
+  "f1": 60.67976545715278,
+  "total": 4028,
+  "HasAns_exact": 47.02085402184707,
+  "HasAns_f1": 60.67976545715278,
+  "HasAns_total": 4028
+}
 
 Multilingual BERT
 Tränad på engelska squad v1
@@ -155,4 +195,27 @@ en {
   "HasAns_exact": 70.15137180700094,
   "HasAns_f1": 78.22259436343667,
   "HasAns_total": 10570
+}
+
+
+
+--- v2.0 -------
+
+Multilingual BERT
+Tränad på original_plus_confident_plus_ot_train.json
+Evaluerad på confident_dev.json
+sv {
+  "exact": 64.76486513586684,
+  "f1": 68.60133634231339,
+  "total": 9973,
+  "HasAns_exact": 51.78748758689176,
+  "HasAns_f1": 61.28627789024072,
+  "HasAns_total": 4028,
+  "NoAns_exact": 73.55761143818334,
+  "NoAns_f1": 73.55761143818334,
+  "NoAns_total": 5945,
+  "best_exact": 68.35455730472275,
+  "best_exact_thresh": -6.154483795166016,
+  "best_f1": 70.91470005309662,
+  "best_f1_thresh": -4.795909762382507
 }

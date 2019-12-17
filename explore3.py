@@ -11,13 +11,15 @@ fname ="confident_translated_train.json"
 fname ="translated train answers translated.json"
 fname ="confident_translated_train_no_impossible.json"
 fname = "original_plus_confident_translated_train_no_impossible.json"
-fname = "confident_plus_ot_train_no_impossible.json"
 fname = "train-v2.0.json"
 fname = "DRCD_training.json"
 fname = "translated_en_plus_all_sv_plus_chinese_train_only.json"
 fname = "DRCD_dev.json"
 fname = "DRCD_test.json"
 fname = "translated_en_plus_all_sv_plus_chinese.json"
+fname = "confident_plus_ot_train_no_impossible.json"
+fname = "confident_translated_train_no_impossible.json"
+fname = "train-v2.0.json"
 
 with open(fname,"r", encoding='utf-8') as f:
     data = json.loads(f.read())['data']
@@ -27,9 +29,9 @@ num_answers_individually = []
 article = data[4]
 title = article['title']
 paragraphs = article['paragraphs']
-print(title)
-print('-'*len(title))
-print()
+#print(title)
+#print('-'*len(title))
+#print()
 
 questions = []
 num_questions = []
@@ -53,7 +55,8 @@ for article in data:
         #print()
         qas = p['qas']
         for qa in qas:
-            questions.append(qa['question'])
+            pass #questions.append([qa['question'],"SVAR: " + qa['answers'][0]['text']])
+
             #print(qa['question'])
             #print(qa['translated_question'])
             #print()
@@ -131,6 +134,7 @@ for article in data:
 
 import random
 random.shuffle(questions)
+questions = sum(questions[:1000],[])
 #print("\n".join(questions[:1000]))
 print("Number of questions: %d" % sum(num_questions))
 print("Number of paragraphs: %d" % len(num_questions))
@@ -143,7 +147,7 @@ print("Number of weird-quote-containing paragraphs: %d (%.2f %%)" % (num_weird_q
 print("Number of translated articles: %d (%.2f %%)" % (num_translated_articles, 100*(num_translated_articles/len(data))))
 print("Number of multi-answer questions: %d (%.2f %%)" % (num_mult_answers, 100*(num_mult_answers/sum(num_questions))))
 print("Number of possible questions: %d (%.2f %%)" % (num_answerable_questions, 100*((num_answerable_questions)/sum(num_questions))))
-
+exit(0)
 import matplotlib.pyplot as plt
 plt.hist(num_answers_individually)
 plt.show()
