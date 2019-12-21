@@ -23,7 +23,7 @@ import __main__ as main
 print("Script: " + os.path.basename(main.__file__))
 print(args)
 
-results = run_squad_v2_3.main(args)
+results = run_squad_v2_3.main(args=args)
 import json
 import datetime
 date = datetime.datetime.now().strftime("%I.%M.%S.%f %p on %B %d, %Y")
