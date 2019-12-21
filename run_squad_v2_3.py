@@ -386,7 +386,7 @@ def load_and_cache_examples(args, tokenizer, evaluate=False, output_examples=Fal
     return dataset
 
 
-def main():
+def main(args=None):
     parser = argparse.ArgumentParser()
 
     ## Required parameters
@@ -490,7 +490,7 @@ def main():
                              "See details at https://nvidia.github.io/apex/amp.html")
     parser.add_argument('--server_ip', type=str, default='', help="Can be used for distant debugging.")
     parser.add_argument('--server_port', type=str, default='', help="Can be used for distant debugging.")
-    args = parser.parse_args()
+    args = parser.parse_args(args)
 
     if os.path.exists(args.output_dir) and os.listdir(
             args.output_dir) and args.do_train and not args.overwrite_output_dir:
