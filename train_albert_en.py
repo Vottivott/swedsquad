@@ -15,7 +15,7 @@ args = """--model_type albert
     --per_gpu_eval_batch_size=3   
     --per_gpu_train_batch_size=3  
     --overwrite_cache 
-    --save_steps=1000000000 
+    --save_steps=10000 
     """.split() # --eval_all_checkpoints
 
 import os
