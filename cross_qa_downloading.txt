@@ -1,0 +1,10 @@
+https://drive.google.com/file/d/1_DC80n3jCuFjN6CxkyNostgp0oy0ONOj/view?usp=sharing
+
+
+
+
+1_DC80n3jCuFjN6CxkyNostgp0oy0ONOj
+
+
+
+wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1_DC80n3jCuFjN6CxkyNostgp0oy0ONOj' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1_DC80n3jCuFjN6CxkyNostgp0oy0ONOj" -O cross_qa_no_impossible.json && rm -rf /tmp/cookies.txt

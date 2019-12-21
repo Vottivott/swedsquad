@@ -19,6 +19,7 @@ fname = "DRCD_test.json"
 fname = "translated_en_plus_all_sv_plus_chinese.json"
 fname = "confident_plus_ot_train_no_impossible.json"
 fname = "confident_translated_train_no_impossible.json"
+fname = "cross_qa_no_impossible.json"
 fname = "train-v2.0.json"
 
 with open(fname,"r", encoding='utf-8') as f:
