@@ -44,6 +44,30 @@ fnames = [{'model':'Multilingual BERT Base cased', 'experiment': 'tränad på en
                # Maybe add chinese?
            }
           },
+           {'model':'Multilingual BERT Base cased', 'experiment': 'tränad på eng + naiv sv',
+           'results': {
+               'sv':{
+                'file': get_r('ev_mlbert_en_plus_sv')},
+               'en':{
+                'file': get_r('even_mlbert_en_plus_sv')}
+           }
+          },
+          {'model': 'Multilingual BERT Base cased', 'experiment': 'tränad på eng',
+           'results': {
+               'sv': {
+                   'file': get_r('ev_mlbert_en')},
+               'en': {
+                   'file': get_r('even_mlbert_en')}
+           }
+           },
+          {'model': 'Multilingual BERT Base cased', 'experiment': 'tränad på eng fast frågorna är översatta till svenska',
+           'results': {
+               'sv': {
+                   'file': get_r('ev_mlbert_cross_qa_only_en')},
+               'en': {
+                   'file': get_r('even_mlbert_cross_qa_only_en')}
+           }
+           },
 
           ]
 
