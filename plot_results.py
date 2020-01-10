@@ -1,7 +1,56 @@
 import re
 import matplotlib.pyplot as plt
+import os
 
-fnames = ["results ev_mlbert_en_plus_sv_plus_ot 05.40.09.270718 PM on January 10, 2020.json"]
+
+def get_r(start):
+    start = "results " + start
+    files = os.listdir("./")
+    found = []
+    for f in files:
+        if f.startswith(start):
+            found.append(f)
+    if len(found) == 0:
+        raise FileNotFoundError("File starting with " + start + " not found!")
+    elif len(found) > 0:
+        raise FileNotFoundError("Multiple files starting with " + start + "!")
+    else:
+        return found[0]
+
+
+
+fnames = [{'model':'Multilingual BERT Base cased', 'experiment': 'tränad på eng + naiv sv + ot sv',
+           'results': {
+               'sv':{
+                'file': "results ev_mlbert_en_plus_sv_plus_ot 05.40.09.270718 PM on January 10, 2020.json"},
+               'en':{
+                'file': get_r('ev_en_eval_mlbert_en_plus_sv_plus_ot')}
+           }
+          },
+           {'model':'Multilingual BERT Base cased', 'experiment': 'tränad på naiv sv',
+           'results': {
+               'sv':{
+                'file': get_r('ev_mlbert_only_sv')},
+               'en':{
+                'file': get_r('even_mlbert_only_sv')}
+           }
+          },
+           {'model':'Multilingual BERT Base cased', 'experiment': 'tränad på eng + naiv sv + ot sv + kinesiska',
+           'results': {
+               'sv':{
+                'file': get_r('ev_mlbert_en_plus_sv_plus_ot_plus_chinese')},
+               'en':{
+                'file': get_r('even_mlbert_en_plus_sv_plus_ot_plus_chinese')}
+               # Maybe add chinese?
+           }
+          },
+
+          ]
+
+
+
+
+
 
 def group_keys(d):
     result = {}

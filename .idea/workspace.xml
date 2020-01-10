@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57e8f9c5-0331-44c9-8c76-e8a494496ec6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ev_en_eval_mlbert_en_plus_sv_plus_ot.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plot_results.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results.txt" beforeDir="false" afterPath="$PROJECT_DIR$/results.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plot_results.py" beforeDir="false" afterPath="$PROJECT_DIR$/plot_results.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,10 +14,13 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ev_en_eval_mlbert_en_plus_sv_plus_ot.py">
+        <entry file="file://$PROJECT_DIR$/plot_results.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+            <state relative-caret-position="258">
+              <caret line="35" column="12" lean-forward="true" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -73,8 +74,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/html_parser.py" />
-        <option value="$PROJECT_DIR$/squad_iterator.py" />
         <option value="$PROJECT_DIR$/coltst.py" />
         <option value="$PROJECT_DIR$/explore.py" />
         <option value="$PROJECT_DIR$/squad_cleaner.py" />
@@ -121,9 +120,11 @@
         <option value="$PROJECT_DIR$/squad_combiner_cross_qa_only_en.py" />
         <option value="$PROJECT_DIR$/train_mlbert_cross_qa_only_en.py" />
         <option value="$PROJECT_DIR$/ev_mlbert_en_plus_sv_plus_ot.py" />
-        <option value="$PROJECT_DIR$/results.txt" />
-        <option value="$PROJECT_DIR$/plot_results.py" />
         <option value="$PROJECT_DIR$/ev_en_eval_mlbert_en_plus_sv_plus_ot.py" />
+        <option value="$PROJECT_DIR$/results.txt" />
+        <option value="$PROJECT_DIR$/ev_mlbert_only_sv.py" />
+        <option value="$PROJECT_DIR$/even_mlbert_only_sv.py" />
+        <option value="$PROJECT_DIR$/plot_results.py" />
       </list>
     </option>
   </component>
@@ -525,7 +526,19 @@
       <option name="presentableId" value="LOCAL−00035" />
       <updated>1578669273714</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL−00036" summary="Add first English eval script">
+      <created>1578692461266</created>
+      <option name="number" value="LOCAL−00036" />
+      <option name="presentableId" value="LOCAL−00036" />
+      <updated>1578692461266</updated>
+    </task>
+    <task id="LOCAL−00037" summary="Only sv">
+      <created>1578694965996</created>
+      <option name="number" value="LOCAL−00037" />
+      <option name="presentableId" value="LOCAL−00037" />
+      <updated>1578694965997</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -554,8 +567,6 @@
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add run_xlm.py" />
-    <MESSAGE value="Fix missing attribute do_lowercase in XLMTokenizer" />
     <MESSAGE value="Add squad iterator" />
     <MESSAGE value="Add eval script for confident translated dev dataset" />
     <MESSAGE value="Add eval script for confident translated dev dataset for xlm" />
@@ -579,7 +590,9 @@
     <MESSAGE value="Add ALBERT training script" />
     <MESSAGE value="Add cross-qa with only English-text Swedish questions" />
     <MESSAGE value="Add first eval script" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add first eval script" />
+    <MESSAGE value="Add first English eval script" />
+    <MESSAGE value="Only sv" />
+    <option name="LAST_COMMIT_MESSAGE" value="Only sv" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -608,23 +621,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/squad_combiner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="12" column="47" lean-forward="true" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/squad_combiner_chinese.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="54" column="70" selection-start-line="54" selection-start-column="70" selection-end-line="54" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/en_eval_mlbert_en_plus_sv.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
@@ -643,13 +639,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train_mlbert_sv_large.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -848,13 +837,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/train_mlbert_only_sv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/train_albert_en.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -910,23 +892,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plot_results.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/en_eval_mlbert_en_plus_sv_plus_ot.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -941,10 +906,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/train_mlbert_sv_large.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_mlbert_only_sv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ev_mlbert_only_sv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ev_en_eval_mlbert_en_plus_sv_plus_ot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        <state relative-caret-position="119">
+          <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/even_mlbert_only_sv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plot_results.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="35" column="12" lean-forward="true" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
