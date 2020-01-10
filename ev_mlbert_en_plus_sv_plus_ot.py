@@ -3,6 +3,7 @@ import run_squad
 args = """--model_type bert 
     --model_name_or_path bert-base-multilingual-cased
     --do_eval 
+    --eval_all_checkpoints
     --train_file original_plus_confident_plus_ot_train_no_impossible.json
     --predict_file confident_translated_dev_no_impossible.json
     --learning_rate 3e-5 
