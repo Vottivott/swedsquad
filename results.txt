@@ -13,6 +13,9 @@ Multilingual BERT Base
 ---- tränad på naiv sv:
   en: f1 = 83.3
   sv: f1 = 72.8 (exact = 62.3)
+---- tränad på eng fast frågorna är översatta till svenska:
+  sv: f1 = 71.7
+
 
 XLM
 ---
