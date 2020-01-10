@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57e8f9c5-0331-44c9-8c76-e8a494496ec6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/squad_combiner_cross_qa_only_en.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,10 +13,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/squad_combiner_cross_qa_only_en.py">
+        <entry file="file://$PROJECT_DIR$/train_mlbert_cross_qa_only_en.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="133" column="21" lean-forward="true" selection-start-line="133" selection-start-column="21" selection-end-line="133" selection-end-column="21" />
+            <state relative-caret-position="187">
+              <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -71,7 +70,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/run_squad_fixed.py" />
         <option value="$PROJECT_DIR$/reading_order.py" />
         <option value="$PROJECT_DIR$/reading_order.txt" />
         <option value="$PROJECT_DIR$/html_parser_tst.py" />
@@ -122,14 +120,15 @@
         <option value="$PROJECT_DIR$/train_albert_en.py" />
         <option value="$PROJECT_DIR$/squad_combiner_cross_qa.py" />
         <option value="$PROJECT_DIR$/squad_combiner_cross_qa_only_en.py" />
+        <option value="$PROJECT_DIR$/train_mlbert_cross_qa_only_en.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-11" />
-    <option name="y" value="-11" />
-    <option name="width" value="980" />
-    <option name="height" value="1031" />
+    <option name="x" value="-12" />
+    <option name="y" value="-12" />
+    <option name="width" value="981" />
+    <option name="height" value="1032" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -137,7 +136,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -154,6 +152,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -286,8 +285,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.explore4" />
       <item itemvalue="Python.explore3" />
+      <item itemvalue="Python.explore4" />
       <item itemvalue="Python.squad_combiner_chinese" />
       <item itemvalue="Python.squad_combiner_cross_qa" />
       <item itemvalue="Python.squad_combiner_cross_qa_only_en" />
@@ -505,19 +504,25 @@
       <option name="presentableId" value="LOCAL−00032" />
       <updated>1576890818899</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL−00033" summary="Add cross-qa with only English-text Swedish questions">
+      <created>1577065596695</created>
+      <option name="number" value="LOCAL−00033" />
+      <option name="presentableId" value="LOCAL−00033" />
+      <updated>1577065596695</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49747476" visible="true" weight="0.30962005" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49747476" visible="true" weight="0.3144705" />
       <window_info id="Structure" order="1" sideWeight="0.50252527" side_tool="true" weight="0.3241714" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32978722" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2890071" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2890071" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.2606383" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -558,7 +563,8 @@
     <MESSAGE value="Add eval" />
     <MESSAGE value="Add cross-lingual question-answer pairs, i.e. where the question is in English and the text and answer in Swedish and vice versa" />
     <MESSAGE value="Add ALBERT training script" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add ALBERT training script" />
+    <MESSAGE value="Add cross-qa with only English-text Swedish questions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add cross-qa with only English-text Swedish questions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -587,13 +593,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/eval_mlbert_sv_large.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="17" lean-forward="true" selection-end-line="34" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/eval_xlm_en.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -911,13 +910,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/train_mlbert_cross_qa.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/squad_combiner_cross_qa.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -927,8 +919,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/squad_combiner_cross_qa_only_en.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="133" column="21" lean-forward="true" selection-start-line="133" selection-start-column="21" selection-end-line="133" selection-end-column="21" />
+        <state relative-caret-position="238">
+          <caret line="126" column="33" selection-start-line="126" selection-start-column="33" selection-end-line="126" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_mlbert_cross_qa.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_mlbert_cross_qa_only_en.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
         </state>
       </provider>
     </entry>
