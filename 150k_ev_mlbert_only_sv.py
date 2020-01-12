@@ -7,10 +7,10 @@ args = """--model_type bert
     --train_file confident_translated_train_no_impossible.json
     --predict_file confident_translated_dev_no_impossible.json
     --learning_rate 3e-5 
-    --max_steps 150000 
+    --num_train_epochs 9 
     --max_seq_length 384 
     --doc_stride 128 
-    --output_dir 150k_ml_bert_only_sv
+    --output_dir 150k_ml_bert_only_sv2
     --per_gpu_eval_batch_size=3   
     --per_gpu_train_batch_size=3 
     --overwrite_cache  
