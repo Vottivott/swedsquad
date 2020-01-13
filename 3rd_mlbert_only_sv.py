@@ -1,4 +1,4 @@
-import run_squad_inter
+import run_squad_inter as run_squad
 
 args = """--model_type bert 
     --model_name_or_path bert-base-multilingual-cased
