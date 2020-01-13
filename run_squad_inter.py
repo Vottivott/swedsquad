@@ -24,7 +24,7 @@ import random
 import glob
 import timeit
 
-import __main__ as main # HANNES
+import __main__ as main_script # HANNES
 
 import numpy as np
 import torch
@@ -189,7 +189,7 @@ def train(args, train_dataset, model, tokenizer):
                         result = dict(
                             (k + ('_{}'.format(global_step) if global_step else ''), v) for k, v in result.items())
                         results.update(result)
-                        outname = "results/" + os.path.basename(main.__file__)[:-3] + " " + date
+                        outname = "results/" + os.path.basename(main_script.__file__)[:-3] + " " + date
                         with open(outname + ".json", "w") as out:
                             json.dump(results, out)
 
