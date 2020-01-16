@@ -13,6 +13,7 @@ import time
 #name ="confident_plus_ot_train_no_impossible"
 name ="confident_plus_ot_train"#_no_impossible"
 name ="confident_plus_ot_train_no_impossible"
+name ="train_only_projfixed_sv_no_impossible"
 name_orig ="train-v2.0"
 #name ="translated train answers translated"
 date = datetime.datetime.now().strftime("%I.%M.%S.%f %p on %B %d, %Y")
@@ -81,7 +82,11 @@ for i,article in enumerate(data_sv_q_en_a['data']):
     for j,p in enumerate(article['paragraphs']):
         for q_i, qa in enumerate(p['qas']):
             if not (remove_impossible and qa['is_impossible']):
-                qa['question'] = sv_questions[qa['id']]['question']
+                if qa['id'] not in sv_questions:
+                    print(qa['id'])
+                    print(qa['question'])
+                else:
+                    qa['question'] = sv_questions[qa['id']]['question']
             p['qas'][q_i]['id'] = "sv_q_en_a_" + p['qas'][q_i]['id']
         if remove_impossible:
             to_remove = []
