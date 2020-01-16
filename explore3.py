@@ -21,6 +21,11 @@ fname = "confident_plus_ot_train_no_impossible.json"
 fname = "confident_translated_train_no_impossible.json"
 fname = "cross_qa_no_impossible.json"
 fname = "train-v2.0.json"
+fname = "projection_squad_train.json"
+fname = "projection_squad_ext_2_ext_5_train.json"
+fname = "projection_squad_ext_2_ext_5_train_Swedish.json"
+fname = "swe_squad_bert_project.json"
+fname = "train_en_plus_proj_sv_no_impossible.json"
 
 with open(fname,"r", encoding='utf-8') as f:
     data = json.loads(f.read())['data']
@@ -30,7 +35,7 @@ num_answers_individually = []
 article = data[4]
 title = article['title']
 paragraphs = article['paragraphs']
-#print(title)
+print(title)
 #print('-'*len(title))
 #print()
 
@@ -56,7 +61,10 @@ for article in data:
         #print()
         qas = p['qas']
         for qa in qas:
-            pass #questions.append([qa['question'],"SVAR: " + qa['answers'][0]['text']])
+            questions.append([qa['question'],"SVAR: " + qa['answers'][0]['text']])
+            #if not qa['is_impossible']:
+            #    questions.append([context,qa['translated_question'],"SVAR: " + qa['answers'][0]['text']])
+            #questions.append([context,qa['question'],"SVAR: " + qa['answers']['text']])
 
             #print(qa['question'])
             #print(qa['translated_question'])
@@ -136,7 +144,7 @@ for article in data:
 import random
 random.shuffle(questions)
 questions = sum(questions[:1000],[])
-#print("\n".join(questions[:1000]))
+print("\n".join(questions[:10]))
 print("Number of questions: %d" % sum(num_questions))
 print("Number of paragraphs: %d" % len(num_questions))
 print("Avg. num questions per paragraph: %.2f" % (sum(num_questions)/len(num_questions)))

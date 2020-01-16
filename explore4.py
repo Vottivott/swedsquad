@@ -19,8 +19,9 @@ fname ="translated train answers translated.json"
 fname ="translated dev answers translated.json"
 #fname ="confident_translated_dev_no_impossible.json"
 #fname = "original_plus_confident_translated_train_no_impossible.json"
+fname ="swe_squad_bert_project.json"
 
-with open(fname,"r") as f:
+with open(fname,"r", encoding='utf-8') as f:
     data = json.loads(f.read())['data']
 
 questions = []
@@ -116,6 +117,16 @@ for article in data:
                 positions.append((a['answer_start'], a['answer_start'] + len(a['text'])))
             if any_naive_answer:
                 num_naive_matchquestions += 1
+            elif len(qa['answers']):
+                a = qa['answers'][0]
+                print(bcolors.BOLD + qa['translated_question'] + bcolors.ENDC)
+                s = a['answer_start']
+                e = s + len(a['text'])
+                tx = translated_context[:s] + bcolors.FAIL + bcolors.BOLD + translated_context[
+                                                                            s:e] + bcolors.ENDC + translated_context[e:]
+                print(tx)
+                print("(naiv: %s%s%s   proj: %s%s%s)" % (bcolors.BOLD,a['translated_text'],bcolors.ENDC,bcolors.BOLD+bcolors.FAIL,a['text'],bcolors.ENDC+bcolors.ENDC))
+                print()
 
         for start,end in positions:
            for s,e in positions:
