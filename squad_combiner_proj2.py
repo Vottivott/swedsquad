@@ -49,6 +49,9 @@ for i,article in enumerate(data['data']):
             if qa['is_impossible']:
                 to_remove.append(q_i)
             for a in qa['answers']:
+                if a['answer_start'] + len(a['text']) > len(p['context']) or a['answer_start'] < 0:
+                    to_remove.append(q_i)
+                    print("Removed erroneus projection")
                 del a['translated_text']
         for q_i in reversed(to_remove):  # Remove impossible questions
             del p['qas'][q_i]
