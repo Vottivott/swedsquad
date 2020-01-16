@@ -2,7 +2,7 @@ import run_squad_inter as run_squad
 
 args = """--model_type bert 
     --model_name_or_path bert-base-multilingual-cased
-    --do_train 
+    --do_eval 
     --evaluate_during_training 
     --train_file train_en_plus_proj_sv_no_impossible.json
     --predict_file dev_only_projfixed_sv_no_impossible.json
