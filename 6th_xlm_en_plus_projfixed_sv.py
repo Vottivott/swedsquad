@@ -4,13 +4,13 @@ args = """--model_type xlm
     --model_name_or_path xlm-mlm-17-1280
     --do_train 
     --evaluate_during_training 
-    --train_file train_en_plus_proj_sv_no_impossible.json
+    --train_file train_en_plus_projfixed_sv_no_impossible.json
     --predict_file confident_translated_dev_no_impossible.json
     --learning_rate 5e-6 
     --max_steps 160000 
     --max_seq_length 384 
     --doc_stride 128 
-    --output_dir 6th_ml_bert_en_plus_proj_sv
+    --output_dir 6th_ml_bert_en_plus_projfixed_sv
     --per_gpu_eval_batch_size=3   
     --per_gpu_train_batch_size=3 
     --overwrite_cache  
