@@ -12,7 +12,7 @@ args = """--model_type xlm
     --doc_stride 128 
     --output_dir 6th_xlm_en_plus_newprojfixed_sv
     --per_gpu_eval_batch_size=3   
-    --per_gpu_train_batch_size=3 
+    --per_gpu_train_batch_size=128 
     --overwrite_cache  
     --save_steps=2000 
     --logging_steps=2000
