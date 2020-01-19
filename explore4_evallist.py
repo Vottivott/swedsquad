@@ -241,30 +241,92 @@ for article in data:
 # correct_answer_wrong_position = [15, 22, 47, 52, 72]
 # correct_answer_wrong_position_but_still_good = [26]
 
-next_index = 0#100#100 (22)
+next_index = 200#100#100 (22) # 200: Varför kämpar forskare för att identifiera pestens historia?
 errors = []
 
 serious_missing_word_errors = [32] # 'cut off the French frontier forts' / avbröt 'framgångsrikt de franska gränsfortarna'
 benign_errors = [10] # Corrected '185'5 to '1855' probably impossible because 1855 is one token?
-added_word_but_still_good = [95]
-minor_missing_word_errors = [11] # 'political activity caused exploitation' / orsakade 'politisk verksamhet utnyttjande'
+added_word_but_still_good = [95] # high-altitude 'ozone layer' / 'ozonskiktet med hög höjd'
+minor_missing_word_errors = [11, 165] # 'political activity caused exploitation' / orsakade 'politisk verksamhet utnyttjande'
 huge_missing_word_errors = [75] # de flesta ord saknas
 correct_answer_wrong_position = []
 correct_answer_wrong_position_but_still_good = []
 minor_missing_letter_logical = [31]
-minor_missing_dollar_sign = [3]
+serious_partial_word_and_added_word = [169] # the insignificance of 'the Ministry of War' / krigsminister'iets obetydlighet'
+partial_word = [115, 174] # 'beroids' / 'beroi'derna
+partial_word_but_still_good = [134, 135, 141]
+minor_missing_symbol = [3]
+minor_added_symbols = [86] # 'empty land' / "tomt land").
+completely_wrong_word = [154] # the 'location' of Warsaw / 'Warsawa's lge
+partial_because_split_too_far_apart_to_make_sense = [183]
 
-if next_index > 0:
-    errors = len(serious_missing_word_errors) + len(huge_missing_word_errors) + len(correct_answer_wrong_position) + len(correct_answer_wrong_position_but_still_good)
-    print("Current error rate: %.2f%%" % (100.0*(float(errors) / next_index)))
+complete_error_vars = [completely_wrong_word]
+partial_error_vars = [serious_missing_word_errors, huge_missing_word_errors, serious_partial_word_and_added_word, partial_word]
+impossible_error_vars = [partial_because_split_too_far_apart_to_make_sense]
 
+ignored_error_vars = [benign_errors, added_word_but_still_good, minor_missing_word_errors, minor_missing_letter_logical, partial_word_but_still_good, minor_missing_symbol, minor_added_symbols, ]
 
 import random
 random.seed(42)
 order = list(range(20302))
 random.shuffle(order)
 print(order[:5]) # Should be [7768, 10891, 93, 10620, 8756]
-for i,n in enumerate(order[next_index:500]):
+
+if next_index > 0:
+    #errors = len(serious_missing_word_errors) + len(huge_missing_word_errors) + len(correct_answer_wrong_position) + len(correct_answer_wrong_position_but_still_good)
+    c = sum(len(v) for v in complete_error_vars)
+    p = sum(len(v) for v in partial_error_vars)
+    i = sum(len(v) for v in impossible_error_vars)
+    ignored = sum(len(v) for v in ignored_error_vars)
+    vars  =[(c,'c'),(p,'p'),(i,'i')]
+    t = sum(v[0] for v in vars)
+    for v,s in vars:
+        print("Current error rate %s: %d (%.2f%%)" % (s, v, (100.0*(float(v) / next_index))))
+    print("Total error rate: %d (%.2f%%)" % (t, (100.0*(float(t) / next_index))))
+
+    print()
+    title = "----- COMPLETE ERRORS (%d) -----------------"
+    title = "----- PARTIAL ERRORS (%d) -----------------"
+    title = "----- IGNORED ERRORS (%d) -----------------"
+    vars = ignored_error_vars
+    print(title % sum(len(v) for v in vars))
+    for v in vars:
+        print()
+        for n in v:
+            qa, a, p, a_i = structured_list[order[n]]
+            qa_en, a_en, p_en = en_questions[(qa['id'], a_i)]
+            # if 'translated_question' not in qa:
+            #    qa['translated_question'] = qa['question']
+            #    a['translated_text'] = a['text']
+            #    translated_context = p['context']
+            # else:
+            translated_context = p['translated_context']
+            # context = p['context']
+            print(qa['question'])
+            print(bcolors.BOLD + str(n) + ": " + qa['translated_question'] + bcolors.ENDC)
+            s = a['answer_start']
+            e = s + len(a['text'])
+            tx = translated_context[:s] + bcolors.FAIL + bcolors.BOLD + translated_context[
+                                                                        s:e] + bcolors.ENDC + translated_context[e:]
+            print(tx)
+            print("( %s%s%s / %s%s%s / %s%s%s )" % (
+                bcolors.BOLD, a['translated_text'], bcolors.ENDC, bcolors.BOLD + bcolors.OKBLUE, a_en['text'],
+                bcolors.ENDC + bcolors.ENDC,
+                bcolors.BOLD + bcolors.FAIL, a['text'],
+                bcolors.ENDC + bcolors.ENDC))
+
+            # print(en_questions.keys())
+            # qa, a, p = en_questions[(qa['id'],a_i)]
+            context = p_en['context']
+
+            s = a_en['answer_start']
+            e = s + len(a_en['text'])
+            tx = context[:s] + bcolors.OKBLUE + bcolors.BOLD + context[
+                                                               s:e] + bcolors.ENDC + context[e:]
+            print(tx)
+            print()
+exit(0)
+for i,n in enumerate(order[next_index:200]):
     i+=next_index
     qa, a, p, a_i = structured_list[n]
     qa_en, a_en, p_en = en_questions[(qa['id'], a_i)]
