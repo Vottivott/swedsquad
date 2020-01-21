@@ -583,6 +583,10 @@ def main(args=None):
 
     logger.info("Results: {}".format(results))
 
+    outname = "results/" + os.path.basename(main_script.__file__)[:-3] + " " + date
+    with open(outname + ".json", "w") as out:
+        json.dump(results, out)
+
     return results
 
 
