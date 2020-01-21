@@ -6,7 +6,7 @@ args = """--model_type bert
     --do_eval 
     --eval_all_checkpoints 
     --train_file confident_translated_train_no_impossible.json
-    --predict_file confident_translated_dev_no_impossible.json
+    --predict_file dev_only_newprojfixed_sv_no_impossible.json
     --learning_rate 5e-6 
     --max_steps 160000 
     --max_seq_length 384 
