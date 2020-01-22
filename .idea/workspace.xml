@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="57e8f9c5-0331-44c9-8c76-e8a494496ec6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ev_mlbert_en.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ev_mlbert_en_plus_sv.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/even_mlbert_en.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/even_mlbert_en_plus_sv.py" afterDir="false" />
+    <list default="true" id="57e8f9c5-0331-44c9-8c76-e8a494496ec6" name="Default Changelist" comment="6 en">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/even_mlbert_only_sv.py" beforeDir="false" afterPath="$PROJECT_DIR$/even_mlbert_only_sv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/explore3.py" beforeDir="false" afterPath="$PROJECT_DIR$/explore3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/explore4.py" beforeDir="false" afterPath="$PROJECT_DIR$/explore4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/explore4_evallist.py" beforeDir="false" afterPath="$PROJECT_DIR$/explore4_evallist.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plot_results.py" beforeDir="false" afterPath="$PROJECT_DIR$/plot_results.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results.txt" beforeDir="false" afterPath="$PROJECT_DIR$/results.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/squad_combiner_proj2.py" beforeDir="false" afterPath="$PROJECT_DIR$/squad_combiner_proj2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/squad_combiner_proj2_only_sv_proj.py" beforeDir="false" afterPath="$PROJECT_DIR$/squad_combiner_proj2_only_sv_proj.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,10 +21,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ev_mlbert_en.py">
+        <entry file="file://$PROJECT_DIR$/ng6th_xlm_en_plus_newprojfixed_sv.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+            <state relative-caret-position="204">
+              <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -36,36 +40,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>num_answe</find>
-      <find>translated</find>
-      <find>indivi</find>
-      <find>num_answers</find>
-      <find>eval_all_checkpoints</find>
+      <find>kung</find>
+      <find>kungen</find>
+      <find>homosexu</find>
+      <find>paris</find>
+      <find>bildning</find>
+      <find>proj_extend_n_words</find>
+      <find>cuda</find>
+      <find>warsaw</find>
+      <find>beroi</find>
+      <find>174</find>
+      <find>31</find>
+      <find>86:</find>
+      <find>75:</find>
+      <find>log metr</find>
+      <find>99:</find>
+      <find>tokeniza</find>
+      <find>141:</find>
+      <find>115</find>
+      <find>10:</find>
+      <find>115:</find>
+      <find>start_</find>
+      <find>Translator</find>
+      <find>krugman</find>
+      <find>v2</find>
+      <find>evaluate</find>
+      <find>do_eval</find>
       <find>outname</find>
-      <find>eval_all_</find>
-      <find>gradient_</find>
-      <find>cased</find>
-      <find>end</find>
-      <find>bold</find>
-      <find>overwrite</find>
-      <find>ex</find>
-      <find>f1</find>
-      <find>eval</find>
-      <find>orig</find>
-      <find>2</find>
-      <find>with</find>
-      <find>version_2_with_negative</find>
-      <find>questions</find>
-      <find>questions.a</find>
-      <find>.append</find>
-      <find>rätning</find>
-      <find>BertForQuestionAnswering</find>
-      <find>2_with</find>
-      <find>save_steps</find>
-      <find>main()</find>
-      <find>main</find>
-      <find>args</find>
-      <find>def main</find>
+      <find>en_plus_sv</find>
+      <find>mlbert_sv_plu</find>
+      <find>only_newproj</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -74,57 +78,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/eval_xlm_sv.py" />
-        <option value="$PROJECT_DIR$/train_mlbert_sv.py" />
-        <option value="$PROJECT_DIR$/check_predictions.py" />
-        <option value="$PROJECT_DIR$/comparer.py" />
-        <option value="$PROJECT_DIR$/squad_combiner.py" />
-        <option value="$PROJECT_DIR$/train_mlbert_sv_large.py" />
-        <option value="$PROJECT_DIR$/eval_mlbert_sv.py" />
-        <option value="$PROJECT_DIR$/eval_mlbert_sv_large.py" />
-        <option value="$PROJECT_DIR$/eval_mlbert_en.py" />
-        <option value="$PROJECT_DIR$/train_mlbert_en_plus_sv.py" />
-        <option value="$PROJECT_DIR$/train_mlbert_only_sv.py" />
-        <option value="$PROJECT_DIR$/squad_combiner2.py" />
-        <option value="$PROJECT_DIR$/eval_mlbert_en_plus_sv.py" />
-        <option value="$PROJECT_DIR$/squad_combiner3.py" />
-        <option value="$PROJECT_DIR$/train_mlbert_en_plus_sv_plus_ot.py" />
-        <option value="$PROJECT_DIR$/eval_mlbert_en_plus_sv_plus_ot.py" />
-        <option value="$PROJECT_DIR$/train_bert_sv_large_conf_plus_ot.py" />
-        <option value="$PROJECT_DIR$/eval_bert_sv_large_conf_plus_ot.py" />
-        <option value="$PROJECT_DIR$/squad_combiner_chinese.py" />
-        <option value="$PROJECT_DIR$/train_mlbert_en_plus_sv_plus_ot_plus_chinese.py" />
-        <option value="$PROJECT_DIR$/en_eval_mlbert_en_plus_sv.py" />
-        <option value="$PROJECT_DIR$/en_eval_mlbert_en_plus_sv_plus_ot.py" />
-        <option value="$PROJECT_DIR$/en_eval_mlbert_only_sv.py" />
-        <option value="$PROJECT_DIR$/v2_train_mlbert_en_plus_sv_plus_ot.py" />
-        <option value="$PROJECT_DIR$/train_bert_sv_large_plus_ot.py" />
-        <option value="$PROJECT_DIR$/train_bert_sv_base_plus_ot.py" />
-        <option value="$PROJECT_DIR$/train_bert_sv_base.py" />
-        <option value="$PROJECT_DIR$/presentation.txt" />
-        <option value="$PROJECT_DIR$/tst2.html" />
-        <option value="$PROJECT_DIR$/explore4.py" />
-        <option value="$PROJECT_DIR$/do_lower_case_train_mlbert_en_plus_sv_plus_ot.py" />
-        <option value="$PROJECT_DIR$/v2_eval_mlbert_en_plus_sv_plus_ot.py" />
-        <option value="$PROJECT_DIR$/train_mlbert_cross_qa.py" />
-        <option value="$PROJECT_DIR$/cross_qa_downloading.py" />
-        <option value="$PROJECT_DIR$/explore3.py" />
-        <option value="$PROJECT_DIR$/run_squad_v2_3.py" />
-        <option value="$PROJECT_DIR$/train_albert_en.py" />
+        <option value="$PROJECT_DIR$/e6th_mlbert_en_plus_projfixed_sv.py" />
+        <option value="$PROJECT_DIR$/p6th_mlbert_only_projfixed_sv.py" />
+        <option value="$PROJECT_DIR$/e6th_mlbert_only_projfixed_sv.py" />
         <option value="$PROJECT_DIR$/squad_combiner_cross_qa.py" />
-        <option value="$PROJECT_DIR$/squad_combiner_cross_qa_only_en.py" />
-        <option value="$PROJECT_DIR$/train_mlbert_cross_qa_only_en.py" />
-        <option value="$PROJECT_DIR$/ev_mlbert_en_plus_sv_plus_ot.py" />
-        <option value="$PROJECT_DIR$/ev_en_eval_mlbert_en_plus_sv_plus_ot.py" />
-        <option value="$PROJECT_DIR$/results.txt" />
-        <option value="$PROJECT_DIR$/ev_mlbert_only_sv.py" />
-        <option value="$PROJECT_DIR$/even_mlbert_only_sv.py" />
-        <option value="$PROJECT_DIR$/ev_mlbert_en_plus_sv_plus_ot_plus_chinese.py" />
-        <option value="$PROJECT_DIR$/even_mlbert_en_plus_sv_plus_ot_plus_chinese.py" />
-        <option value="$PROJECT_DIR$/ev_mlbert_en_plus_sv.py" />
-        <option value="$PROJECT_DIR$/even_mlbert_en_plus_sv.py" />
+        <option value="$PROJECT_DIR$/6th_mlbert_cross_en_projfixed_sv.py" />
+        <option value="$PROJECT_DIR$/ssh_transfer.py" />
+        <option value="$PROJECT_DIR$/explore4.py" />
+        <option value="$PROJECT_DIR$/6th_mlbert_en.py" />
+        <option value="$PROJECT_DIR$/run_squad_fixed_inter.py" />
+        <option value="$PROJECT_DIR$/6th_xlm_en_plus_proj_sv.py" />
+        <option value="$PROJECT_DIR$/squad_combiner_proj2_only_sv_proj.py" />
+        <option value="$PROJECT_DIR$/squad_combiner_proj2.py" />
+        <option value="$PROJECT_DIR$/6th_mlbert_en_plus_newprojfixed_sv.py" />
+        <option value="$PROJECT_DIR$/n6th_mlbert_en_plus_projfixed_sv.py" />
+        <option value="$PROJECT_DIR$/6th_xlm_en_plus_projfixed_sv.py" />
+        <option value="$PROJECT_DIR$/6th_xlm_en_plus_newprojfixed_sv.py" />
+        <option value="$PROJECT_DIR$/6th_svbertbase_newprojfixed_sv.py" />
+        <option value="$PROJECT_DIR$/6th_svbertbase_naive_sv.py" />
+        <option value="$PROJECT_DIR$/6th_svbertbase_naive_plus_ot_sv.py" />
+        <option value="$PROJECT_DIR$/explore4_evallist.py" />
+        <option value="$PROJECT_DIR$/explore4_evallist_ot.py" />
+        <option value="$PROJECT_DIR$/squad_combiner_make_impossible.py" />
+        <option value="$PROJECT_DIR$/squad_combiner_add_en.py" />
+        <option value="$PROJECT_DIR$/6th_v2_mlbert_en_plus_newprojfixed_sv.py" />
+        <option value="$PROJECT_DIR$/squad_combiner_confidenizer.py" />
+        <option value="$PROJECT_DIR$/n6th_mlbert_en_plus_newprojfixed_sv.py" />
+        <option value="$PROJECT_DIR$/n6th_v2_mlbert_en_plus_newprojfixed_sv.py" />
+        <option value="$PROJECT_DIR$/spanska plan.txt" />
+        <option value="$PROJECT_DIR$/tst3.py" />
+        <option value="$PROJECT_DIR$/squad_spanish_preprocessing.py" />
+        <option value="$PROJECT_DIR$/explore3.py" />
+        <option value="$PROJECT_DIR$/run_squad_inter.py" />
+        <option value="$PROJECT_DIR$/results/-" />
+        <option value="$PROJECT_DIR$/results/n6th_v2_mlbert_en_plus_newprojfixed_sv .json" />
+        <option value="$PROJECT_DIR$/n6th_mlbert_en_plus_sv_plus_ot.py" />
+        <option value="$PROJECT_DIR$/n6th_mlbert_sv_plus_ot.py" />
+        <option value="$PROJECT_DIR$/n6th_mlbert_en.py" />
+        <option value="$PROJECT_DIR$/n6th_svbertbase_naive_plus_ot_sv.py" />
+        <option value="$PROJECT_DIR$/n6th_svbertbase_naive_sv.py" />
+        <option value="$PROJECT_DIR$/n6th_svbertbase_newprojfixed_sv.py" />
+        <option value="$PROJECT_DIR$/n6th_xlm_en_plus_newprojfixed_sv.py" />
+        <option value="$PROJECT_DIR$/results/n6th_mlbert_en_plus_sv_plus_ot.json" />
         <option value="$PROJECT_DIR$/plot_results.py" />
-        <option value="$PROJECT_DIR$/ev_mlbert_en.py" />
+        <option value="$PROJECT_DIR$/n6th_mlbert_only_newprojfixed_sv.py" />
+        <option value="$PROJECT_DIR$/6th_mlbert_only_newprojfixed_sv.py" />
+        <option value="$PROJECT_DIR$/ng6th_mlbert_en.py" />
+        <option value="$PROJECT_DIR$/ng6th_mlbert_sv_plus_ot.py" />
+        <option value="$PROJECT_DIR$/ng6th_mlbert_only_newprojfixed_sv.py" />
+        <option value="$PROJECT_DIR$/ng6th_mlbert_en_plus_sv_plus_ot.py" />
+        <option value="$PROJECT_DIR$/ng6th_mlbert_en_plus_newprojfixed_sv.py" />
+        <option value="$PROJECT_DIR$/ng6th_xlm_en_plus_newprojfixed_sv.py" />
       </list>
     </option>
   </component>
@@ -134,7 +138,9 @@
     <option name="width" value="981" />
     <option name="height" value="1032" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -151,6 +157,11 @@
               <item name="swedsquad" type="b2602c69:ProjectViewProjectNode" />
               <item name="swedsquad" type="462c0819:PsiDirectoryNode" />
               <item name="comparison" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="swedsquad" type="b2602c69:ProjectViewProjectNode" />
+              <item name="swedsquad" type="462c0819:PsiDirectoryNode" />
+              <item name="results" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -204,27 +215,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="explore4" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="swedsquad" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/explore4.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="plot_results" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="swedsquad" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -246,7 +236,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="squad_combiner_cross_qa" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="squad_combiner_confidenizer" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="swedsquad" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -258,7 +248,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/squad_combiner_cross_qa.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/squad_combiner_confidenizer.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -267,7 +257,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="squad_combiner_cross_qa_only_en" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="squad_spanish_preprocessing" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="swedsquad" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -279,7 +269,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/squad_combiner_cross_qa_only_en.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/squad_spanish_preprocessing.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tst3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="swedsquad" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tst3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -289,19 +300,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.explore4" />
       <item itemvalue="Python.explore3" />
-      <item itemvalue="Python.squad_combiner_cross_qa" />
-      <item itemvalue="Python.squad_combiner_cross_qa_only_en" />
       <item itemvalue="Python.plot_results" />
+      <item itemvalue="Python.squad_combiner_confidenizer" />
+      <item itemvalue="Python.squad_spanish_preprocessing" />
+      <item itemvalue="Python.tst3" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.plot_results" />
-        <item itemvalue="Python.squad_combiner_cross_qa_only_en" />
         <item itemvalue="Python.explore3" />
-        <item itemvalue="Python.squad_combiner_cross_qa" />
-        <item itemvalue="Python.explore4" />
+        <item itemvalue="Python.squad_spanish_preprocessing" />
+        <item itemvalue="Python.tst3" />
+        <item itemvalue="Python.squad_combiner_confidenizer" />
       </list>
     </recent_temporary>
   </component>
@@ -316,253 +327,318 @@
       <option name="presentableId" value="Default" />
       <updated>1575589432876</updated>
     </task>
-    <task id="LOCAL−00001" summary="Update">
-      <created>1575678277053</created>
-      <option name="number" value="LOCAL−00001" />
-      <option name="presentableId" value="LOCAL−00001" />
-      <updated>1575678277054</updated>
+    <task id="LOCAL−00044" summary="Add more ev and even scripts">
+      <created>1578798631169</created>
+      <option name="number" value="LOCAL−00044" />
+      <option name="presentableId" value="LOCAL−00044" />
+      <updated>1578798631169</updated>
     </task>
-    <task id="LOCAL−00002" summary="Add run_xlm.py">
-      <created>1575813425610</created>
-      <option name="number" value="LOCAL−00002" />
-      <option name="presentableId" value="LOCAL−00002" />
-      <updated>1575813425612</updated>
+    <task id="LOCAL−00045" summary="Add more ev and even scripts">
+      <created>1578799103595</created>
+      <option name="number" value="LOCAL−00045" />
+      <option name="presentableId" value="LOCAL−00045" />
+      <updated>1578799103595</updated>
     </task>
-    <task id="LOCAL−00003" summary="Add run_xlm.py">
-      <created>1575813451184</created>
-      <option name="number" value="LOCAL−00003" />
-      <option name="presentableId" value="LOCAL−00003" />
-      <updated>1575813451184</updated>
+    <task id="LOCAL−00046" summary="Add more ev and even scripts">
+      <created>1578838874152</created>
+      <option name="number" value="LOCAL−00046" />
+      <option name="presentableId" value="LOCAL−00046" />
+      <updated>1578838874152</updated>
     </task>
-    <task id="LOCAL−00004" summary="Fix missing attribute do_lowercase in XLMTokenizer">
-      <created>1575925352468</created>
-      <option name="number" value="LOCAL−00004" />
-      <option name="presentableId" value="LOCAL−00004" />
-      <updated>1575925352468</updated>
+    <task id="LOCAL−00047" summary="Add more ev and even scripts">
+      <created>1578845670630</created>
+      <option name="number" value="LOCAL−00047" />
+      <option name="presentableId" value="LOCAL−00047" />
+      <updated>1578845670630</updated>
     </task>
-    <task id="LOCAL−00005" summary="Fix">
-      <created>1575926535365</created>
-      <option name="number" value="LOCAL−00005" />
-      <option name="presentableId" value="LOCAL−00005" />
-      <updated>1575926535365</updated>
+    <task id="LOCAL−00048" summary="Add more ev and even scripts">
+      <created>1578924609467</created>
+      <option name="number" value="LOCAL−00048" />
+      <option name="presentableId" value="LOCAL−00048" />
+      <updated>1578924609468</updated>
     </task>
-    <task id="LOCAL−00006" summary="Fix">
-      <created>1575929477171</created>
-      <option name="number" value="LOCAL−00006" />
-      <option name="presentableId" value="LOCAL−00006" />
-      <updated>1575929477171</updated>
+    <task id="LOCAL−00049" summary="Next gen">
+      <created>1578930168453</created>
+      <option name="number" value="LOCAL−00049" />
+      <option name="presentableId" value="LOCAL−00049" />
+      <updated>1578930168453</updated>
     </task>
-    <task id="LOCAL−00007" summary="Add squad iterator">
-      <created>1576017761170</created>
-      <option name="number" value="LOCAL−00007" />
-      <option name="presentableId" value="LOCAL−00007" />
-      <updated>1576017761170</updated>
+    <task id="LOCAL−00050" summary="Add more ev and even scripts">
+      <created>1578930222242</created>
+      <option name="number" value="LOCAL−00050" />
+      <option name="presentableId" value="LOCAL−00050" />
+      <updated>1578930222244</updated>
     </task>
-    <task id="LOCAL−00008" summary="Add eval script for confident translated dev dataset">
-      <created>1576254479334</created>
-      <option name="number" value="LOCAL−00008" />
-      <option name="presentableId" value="LOCAL−00008" />
-      <updated>1576254479334</updated>
+    <task id="LOCAL−00051" summary="Add more ev and even scripts">
+      <created>1578930275453</created>
+      <option name="number" value="LOCAL−00051" />
+      <option name="presentableId" value="LOCAL−00051" />
+      <updated>1578930275453</updated>
     </task>
-    <task id="LOCAL−00009" summary="Add eval script for confident translated dev dataset for xlm">
-      <created>1576255135243</created>
-      <option name="number" value="LOCAL−00009" />
-      <option name="presentableId" value="LOCAL−00009" />
-      <updated>1576255135243</updated>
+    <task id="LOCAL−00052" summary="Fix run_squad_inter">
+      <created>1578931413140</created>
+      <option name="number" value="LOCAL−00052" />
+      <option name="presentableId" value="LOCAL−00052" />
+      <updated>1578931413140</updated>
     </task>
-    <task id="LOCAL−00010" summary="Add eval script">
-      <created>1576255726079</created>
-      <option name="number" value="LOCAL−00010" />
-      <option name="presentableId" value="LOCAL−00010" />
-      <updated>1576255726079</updated>
+    <task id="LOCAL−00053" summary="Even lower learning rate">
+      <created>1578945713908</created>
+      <option name="number" value="LOCAL−00053" />
+      <option name="presentableId" value="LOCAL−00053" />
+      <updated>1578945713912</updated>
     </task>
-    <task id="LOCAL−00011" summary="Add eval script">
-      <created>1576256099641</created>
-      <option name="number" value="LOCAL−00011" />
-      <option name="presentableId" value="LOCAL−00011" />
-      <updated>1576256099641</updated>
+    <task id="LOCAL−00054" summary="Halve learning rate again">
+      <created>1578962573348</created>
+      <option name="number" value="LOCAL−00054" />
+      <option name="presentableId" value="LOCAL−00054" />
+      <updated>1578962573350</updated>
     </task>
-    <task id="LOCAL−00012" summary="Add script for fine-tuning of the large Swedish BERT model">
-      <created>1576260193251</created>
-      <option name="number" value="LOCAL−00012" />
-      <option name="presentableId" value="LOCAL−00012" />
-      <updated>1576260193251</updated>
+    <task id="LOCAL−00055" summary="More training">
+      <created>1578965156913</created>
+      <option name="number" value="LOCAL−00055" />
+      <option name="presentableId" value="LOCAL−00055" />
+      <updated>1578965156914</updated>
     </task>
-    <task id="LOCAL−00013" summary="Set uncased flag do_lower_case">
-      <created>1576260672346</created>
-      <option name="number" value="LOCAL−00013" />
-      <option name="presentableId" value="LOCAL−00013" />
-      <updated>1576260672346</updated>
+    <task id="LOCAL−00056" summary="More training">
+      <created>1578973080866</created>
+      <option name="number" value="LOCAL−00056" />
+      <option name="presentableId" value="LOCAL−00056" />
+      <updated>1578973080867</updated>
     </task>
-    <task id="LOCAL−00014" summary="Add eval script">
-      <created>1576272609789</created>
-      <option name="number" value="LOCAL−00014" />
-      <option name="presentableId" value="LOCAL−00014" />
-      <updated>1576272609789</updated>
+    <task id="LOCAL−00057" summary="Add projected training data and train script :)">
+      <created>1579035539672</created>
+      <option name="number" value="LOCAL−00057" />
+      <option name="presentableId" value="LOCAL−00057" />
+      <updated>1579035539673</updated>
     </task>
-    <task id="LOCAL−00015" summary="Add train/eval of mlbert trained on both sv+en">
-      <created>1576281346637</created>
-      <option name="number" value="LOCAL−00015" />
-      <option name="presentableId" value="LOCAL−00015" />
-      <updated>1576281346638</updated>
+    <task id="LOCAL−00058" summary="Train only proj sv">
+      <created>1579051352012</created>
+      <option name="number" value="LOCAL−00058" />
+      <option name="presentableId" value="LOCAL−00058" />
+      <updated>1579051352013</updated>
     </task>
-    <task id="LOCAL−00016" summary="Overwrite cache">
-      <created>1576281815388</created>
-      <option name="number" value="LOCAL−00016" />
-      <option name="presentableId" value="LOCAL−00016" />
-      <updated>1576281815388</updated>
+    <task id="LOCAL−00059" summary="sv base ev">
+      <created>1579051505250</created>
+      <option name="number" value="LOCAL−00059" />
+      <option name="presentableId" value="LOCAL−00059" />
+      <updated>1579051505250</updated>
     </task>
-    <task id="LOCAL−00017" summary="Add optimal-transport data sets">
-      <created>1576285571920</created>
-      <option name="number" value="LOCAL−00017" />
-      <option name="presentableId" value="LOCAL−00017" />
-      <updated>1576285571923</updated>
+    <task id="LOCAL−00060" summary="Train fixed proj sv">
+      <created>1579136540126</created>
+      <option name="number" value="LOCAL−00060" />
+      <option name="presentableId" value="LOCAL−00060" />
+      <updated>1579136540127</updated>
     </task>
-    <task id="LOCAL−00018" summary="Fix">
-      <created>1576294548334</created>
-      <option name="number" value="LOCAL−00018" />
-      <option name="presentableId" value="LOCAL−00018" />
-      <updated>1576294548334</updated>
+    <task id="LOCAL−00061" summary="Fix projfixed">
+      <created>1579144677749</created>
+      <option name="number" value="LOCAL−00061" />
+      <option name="presentableId" value="LOCAL−00061" />
+      <updated>1579144677749</updated>
     </task>
-    <task id="LOCAL−00019" summary="Add en_plus_sv_plus_ot">
-      <created>1576295919588</created>
-      <option name="number" value="LOCAL−00019" />
-      <option name="presentableId" value="LOCAL−00019" />
-      <updated>1576295919588</updated>
+    <task id="LOCAL−00062" summary="Add new evaluation set">
+      <created>1579205037126</created>
+      <option name="number" value="LOCAL−00062" />
+      <option name="presentableId" value="LOCAL−00062" />
+      <updated>1579205037126</updated>
     </task>
-    <task id="LOCAL−00020" summary="Fixes">
-      <created>1576332006261</created>
-      <option name="number" value="LOCAL−00020" />
-      <option name="presentableId" value="LOCAL−00020" />
-      <updated>1576332006261</updated>
+    <task id="LOCAL−00063" summary="Fix">
+      <created>1579205258953</created>
+      <option name="number" value="LOCAL−00063" />
+      <option name="presentableId" value="LOCAL−00063" />
+      <updated>1579205258953</updated>
     </task>
-    <task id="LOCAL−00021" summary="Add chinese to the training set">
-      <created>1576336806810</created>
-      <option name="number" value="LOCAL−00021" />
-      <option name="presentableId" value="LOCAL−00021" />
-      <updated>1576336806822</updated>
+    <task id="LOCAL−00064" summary="More">
+      <created>1579205704237</created>
+      <option name="number" value="LOCAL−00064" />
+      <option name="presentableId" value="LOCAL−00064" />
+      <updated>1579205704237</updated>
     </task>
-    <task id="LOCAL−00022" summary="Add English evaluation for mixed and Swedish-only trained multilingual-bert models">
-      <created>1576337864661</created>
-      <option name="number" value="LOCAL−00022" />
-      <option name="presentableId" value="LOCAL−00022" />
-      <updated>1576337864661</updated>
+    <task id="LOCAL−00065" summary="en">
+      <created>1579206148793</created>
+      <option name="number" value="LOCAL−00065" />
+      <option name="presentableId" value="LOCAL−00065" />
+      <updated>1579206148793</updated>
     </task>
-    <task id="LOCAL−00023" summary="Add SQuAD 2.0 training">
-      <created>1576376910201</created>
-      <option name="number" value="LOCAL−00023" />
-      <option name="presentableId" value="LOCAL−00023" />
-      <updated>1576376910202</updated>
+    <task id="LOCAL−00066" summary="More">
+      <created>1579206664444</created>
+      <option name="number" value="LOCAL−00066" />
+      <option name="presentableId" value="LOCAL−00066" />
+      <updated>1579206664444</updated>
     </task>
-    <task id="LOCAL−00024" summary="Add +ot for Swedish BERT">
-      <created>1576377594211</created>
-      <option name="number" value="LOCAL−00024" />
-      <option name="presentableId" value="LOCAL−00024" />
-      <updated>1576377594211</updated>
+    <task id="LOCAL−00067" summary="More">
+      <created>1579206853258</created>
+      <option name="number" value="LOCAL−00067" />
+      <option name="presentableId" value="LOCAL−00067" />
+      <updated>1579206853258</updated>
     </task>
-    <task id="LOCAL−00025" summary="Add base for Swedish BERT">
-      <created>1576378000761</created>
-      <option name="number" value="LOCAL−00025" />
-      <option name="presentableId" value="LOCAL−00025" />
-      <updated>1576378000761</updated>
+    <task id="LOCAL−00068" summary="Cross en + projsv">
+      <created>1579209015872</created>
+      <option name="number" value="LOCAL−00068" />
+      <option name="presentableId" value="LOCAL−00068" />
+      <updated>1579209015873</updated>
     </task>
-    <task id="LOCAL−00026" summary="Try doing lower case but we shouldn't">
-      <created>1576545481945</created>
-      <option name="number" value="LOCAL−00026" />
-      <option name="presentableId" value="LOCAL−00026" />
-      <updated>1576545481946</updated>
+    <task id="LOCAL−00069" summary="English">
+      <created>1579237443961</created>
+      <option name="number" value="LOCAL−00069" />
+      <option name="presentableId" value="LOCAL−00069" />
+      <updated>1579237443964</updated>
     </task>
-    <task id="LOCAL−00027" summary="Add eval">
-      <created>1576550455532</created>
-      <option name="number" value="LOCAL−00027" />
-      <option name="presentableId" value="LOCAL−00027" />
-      <updated>1576550455532</updated>
+    <task id="LOCAL−00070" summary="XLM again">
+      <created>1579238018762</created>
+      <option name="number" value="LOCAL−00070" />
+      <option name="presentableId" value="LOCAL−00070" />
+      <updated>1579238018762</updated>
     </task>
-    <task id="LOCAL−00028" summary="Add cross-lingual question-answer pairs, i.e. where the question is in English and the text and answer in Swedish and vice versa">
-      <created>1576727848057</created>
-      <option name="number" value="LOCAL−00028" />
-      <option name="presentableId" value="LOCAL−00028" />
-      <updated>1576727848058</updated>
+    <task id="LOCAL−00071" summary="Fix xlm">
+      <created>1579242325133</created>
+      <option name="number" value="LOCAL−00071" />
+      <option name="presentableId" value="LOCAL−00071" />
+      <updated>1579242325133</updated>
     </task>
-    <task id="LOCAL−00029" summary="Add ALBERT training script">
-      <created>1576887599559</created>
-      <option name="number" value="LOCAL−00029" />
-      <option name="presentableId" value="LOCAL−00029" />
-      <updated>1576887599561</updated>
+    <task id="LOCAL−00072" summary="Fix xlm">
+      <created>1579275796569</created>
+      <option name="number" value="LOCAL−00072" />
+      <option name="presentableId" value="LOCAL−00072" />
+      <updated>1579275796570</updated>
     </task>
-    <task id="LOCAL−00030" summary="Add ALBERT training script">
-      <created>1576889842029</created>
-      <option name="number" value="LOCAL−00030" />
-      <option name="presentableId" value="LOCAL−00030" />
-      <updated>1576889842029</updated>
+    <task id="LOCAL−00073" summary="Add newprojfixed">
+      <created>1579278313717</created>
+      <option name="number" value="LOCAL−00073" />
+      <option name="presentableId" value="LOCAL−00073" />
+      <updated>1579278313717</updated>
     </task>
-    <task id="LOCAL−00031" summary="Add ALBERT training script">
-      <created>1576889992466</created>
-      <option name="number" value="LOCAL−00031" />
-      <option name="presentableId" value="LOCAL−00031" />
-      <updated>1576889992466</updated>
+    <task id="LOCAL−00074" summary="Add">
+      <created>1579278819339</created>
+      <option name="number" value="LOCAL−00074" />
+      <option name="presentableId" value="LOCAL−00074" />
+      <updated>1579278819339</updated>
     </task>
-    <task id="LOCAL−00032" summary="Add ALBERT training script">
-      <created>1576890818899</created>
-      <option name="number" value="LOCAL−00032" />
-      <option name="presentableId" value="LOCAL−00032" />
-      <updated>1576890818899</updated>
+    <task id="LOCAL−00075" summary="Evallist">
+      <created>1579290235902</created>
+      <option name="number" value="LOCAL−00075" />
+      <option name="presentableId" value="LOCAL−00075" />
+      <updated>1579290235904</updated>
     </task>
-    <task id="LOCAL−00033" summary="Add cross-qa with only English-text Swedish questions">
-      <created>1577065596695</created>
-      <option name="number" value="LOCAL−00033" />
-      <option name="presentableId" value="LOCAL−00033" />
-      <updated>1577065596695</updated>
+    <task id="LOCAL−00076" summary="Fix xlm">
+      <created>1579307517539</created>
+      <option name="number" value="LOCAL−00076" />
+      <option name="presentableId" value="LOCAL−00076" />
+      <updated>1579307517541</updated>
     </task>
-    <task id="LOCAL−00034" summary="Add first eval script">
-      <created>1578668434181</created>
-      <option name="number" value="LOCAL−00034" />
-      <option name="presentableId" value="LOCAL−00034" />
-      <updated>1578668434181</updated>
+    <task id="LOCAL−00077" summary="Fix xlm">
+      <created>1579307538998</created>
+      <option name="number" value="LOCAL−00077" />
+      <option name="presentableId" value="LOCAL−00077" />
+      <updated>1579307539003</updated>
     </task>
-    <task id="LOCAL−00035" summary="Add first eval script">
-      <created>1578669273714</created>
-      <option name="number" value="LOCAL−00035" />
-      <option name="presentableId" value="LOCAL−00035" />
-      <updated>1578669273714</updated>
+    <task id="LOCAL−00078" summary="Fix xlm">
+      <created>1579312191736</created>
+      <option name="number" value="LOCAL−00078" />
+      <option name="presentableId" value="LOCAL−00078" />
+      <updated>1579312191737</updated>
     </task>
-    <task id="LOCAL−00036" summary="Add first English eval script">
-      <created>1578692461266</created>
-      <option name="number" value="LOCAL−00036" />
-      <option name="presentableId" value="LOCAL−00036" />
-      <updated>1578692461266</updated>
+    <task id="LOCAL−00079" summary="Add sv">
+      <created>1579367355665</created>
+      <option name="number" value="LOCAL−00079" />
+      <option name="presentableId" value="LOCAL−00079" />
+      <updated>1579367355666</updated>
     </task>
-    <task id="LOCAL−00037" summary="Only sv">
-      <created>1578694965996</created>
-      <option name="number" value="LOCAL−00037" />
-      <option name="presentableId" value="LOCAL−00037" />
-      <updated>1578694965997</updated>
+    <task id="LOCAL−00080" summary="Update evallist">
+      <created>1579397459313</created>
+      <option name="number" value="LOCAL−00080" />
+      <option name="presentableId" value="LOCAL−00080" />
+      <updated>1579397459404</updated>
     </task>
-    <task id="LOCAL−00038" summary="ch">
-      <created>1578696470426</created>
-      <option name="number" value="LOCAL−00038" />
-      <option name="presentableId" value="LOCAL−00038" />
-      <updated>1578696470426</updated>
+    <task id="LOCAL−00081" summary="Add sv">
+      <created>1579408423905</created>
+      <option name="number" value="LOCAL−00081" />
+      <option name="presentableId" value="LOCAL−00081" />
+      <updated>1579408423906</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL−00082" summary="More datasets">
+      <created>1579472689986</created>
+      <option name="number" value="LOCAL−00082" />
+      <option name="presentableId" value="LOCAL−00082" />
+      <updated>1579472689986</updated>
+    </task>
+    <task id="LOCAL−00083" summary="Eval">
+      <created>1579474964699</created>
+      <option name="number" value="LOCAL−00083" />
+      <option name="presentableId" value="LOCAL−00083" />
+      <updated>1579474964699</updated>
+    </task>
+    <task id="LOCAL−00084" summary="Eval v2 2">
+      <created>1579475363797</created>
+      <option name="number" value="LOCAL−00084" />
+      <option name="presentableId" value="LOCAL−00084" />
+      <updated>1579475363797</updated>
+    </task>
+    <task id="LOCAL−00085" summary="Eval v2 2">
+      <created>1579475400120</created>
+      <option name="number" value="LOCAL−00085" />
+      <option name="presentableId" value="LOCAL−00085" />
+      <updated>1579475400120</updated>
+    </task>
+    <task id="LOCAL−00086" summary="Eval en">
+      <created>1579564623763</created>
+      <option name="number" value="LOCAL−00086" />
+      <option name="presentableId" value="LOCAL−00086" />
+      <updated>1579564623764</updated>
+    </task>
+    <task id="LOCAL−00087" summary="6 evals">
+      <created>1579566820522</created>
+      <option name="number" value="LOCAL−00087" />
+      <option name="presentableId" value="LOCAL−00087" />
+      <updated>1579566820522</updated>
+    </task>
+    <task id="LOCAL−00088" summary="Fix 7 evals">
+      <created>1579567100416</created>
+      <option name="number" value="LOCAL−00088" />
+      <option name="presentableId" value="LOCAL−00088" />
+      <updated>1579567100417</updated>
+    </task>
+    <task id="LOCAL−00089" summary="only newprojfixed">
+      <created>1579567640068</created>
+      <option name="number" value="LOCAL−00089" />
+      <option name="presentableId" value="LOCAL−00089" />
+      <updated>1579567640068</updated>
+    </task>
+    <task id="LOCAL−00090" summary="Fix results saving">
+      <created>1579578389670</created>
+      <option name="number" value="LOCAL−00090" />
+      <option name="presentableId" value="LOCAL−00090" />
+      <updated>1579578389670</updated>
+    </task>
+    <task id="LOCAL−00091" summary="Fix onlynewprojfixedv">
+      <created>1579672456537</created>
+      <option name="number" value="LOCAL−00091" />
+      <option name="presentableId" value="LOCAL−00091" />
+      <updated>1579672456538</updated>
+    </task>
+    <task id="LOCAL−00092" summary="6 en">
+      <created>1579672977325</created>
+      <option name="number" value="LOCAL−00092" />
+      <option name="presentableId" value="LOCAL−00092" />
+      <updated>1579672977325</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49747476" visible="true" weight="0.3144705" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49747476" visible="true" weight="0.3920776" />
       <window_info id="Structure" order="1" sideWeight="0.50252527" side_tool="true" weight="0.3241714" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32978722" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2890071" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.2606383" />
+      <window_info anchor="bottom" x="22" y="73" width="1237" height="534" id="Run" maximized="true" order="2" visible="true" weight="0.35815603" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.57092196" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32978722" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.41666666" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -573,39 +649,39 @@
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add eval script for confident translated dev dataset" />
-    <MESSAGE value="Add eval script for confident translated dev dataset for xlm" />
-    <MESSAGE value="Add script for fine-tuning of the large Swedish BERT model" />
-    <MESSAGE value="Set uncased flag do_lower_case" />
-    <MESSAGE value="Add eval script" />
-    <MESSAGE value="Add train/eval of mlbert trained on both sv+en" />
-    <MESSAGE value="Overwrite cache" />
-    <MESSAGE value="Add optimal-transport data sets" />
+    <MESSAGE value="Train fixed proj sv" />
+    <MESSAGE value="Fix projfixed" />
+    <MESSAGE value="Add new evaluation set" />
     <MESSAGE value="Fix" />
-    <MESSAGE value="Add en_plus_sv_plus_ot" />
-    <MESSAGE value="Fixes" />
-    <MESSAGE value="Add chinese to the training set" />
-    <MESSAGE value="Add English evaluation for mixed and Swedish-only trained multilingual-bert models" />
-    <MESSAGE value="Add SQuAD 2.0 training" />
-    <MESSAGE value="Add +ot for Swedish BERT" />
-    <MESSAGE value="Add base for Swedish BERT" />
-    <MESSAGE value="Try doing lower case but we shouldn't" />
-    <MESSAGE value="Add eval" />
-    <MESSAGE value="Add cross-lingual question-answer pairs, i.e. where the question is in English and the text and answer in Swedish and vice versa" />
-    <MESSAGE value="Add ALBERT training script" />
-    <MESSAGE value="Add cross-qa with only English-text Swedish questions" />
-    <MESSAGE value="Add first eval script" />
-    <MESSAGE value="Add first English eval script" />
-    <MESSAGE value="Only sv" />
-    <MESSAGE value="ch" />
-    <option name="LAST_COMMIT_MESSAGE" value="ch" />
+    <MESSAGE value="en" />
+    <MESSAGE value="More" />
+    <MESSAGE value="Cross en + projsv" />
+    <MESSAGE value="English" />
+    <MESSAGE value="XLM again" />
+    <MESSAGE value="Add newprojfixed" />
+    <MESSAGE value="Add" />
+    <MESSAGE value="Evallist" />
+    <MESSAGE value="Fix xlm" />
+    <MESSAGE value="Update evallist" />
+    <MESSAGE value="Add sv" />
+    <MESSAGE value="More datasets" />
+    <MESSAGE value="Eval" />
+    <MESSAGE value="Eval v2 2" />
+    <MESSAGE value="Eval en" />
+    <MESSAGE value="6 evals" />
+    <MESSAGE value="Fix 7 evals" />
+    <MESSAGE value="only newprojfixed" />
+    <MESSAGE value="Fix results saving" />
+    <MESSAGE value="Fix onlynewprojfixedv" />
+    <MESSAGE value="6 en" />
+    <option name="LAST_COMMIT_MESSAGE" value="6 en" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/explore3.py</url>
-          <line>32</line>
+          <line>66</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -620,343 +696,396 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/explore4.py</url>
-          <line>25</line>
+          <line>33</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/plot_results.py</url>
+          <line>374</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/plot_results.py</url>
+          <line>409</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/comparison/en.txt">
+    <entry file="file://$PROJECT_DIR$/explore4_evallist_ot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="348" column="42" lean-forward="true" selection-start-line="348" selection-start-column="42" selection-end-line="348" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/6th_svbertbase_newprojfixed_sv 11.17.37.467213 PM on January 18, 2020.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/span-test.txt">
+    <entry file="file://$PROJECT_DIR$/squad_combiner_make_impossible.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="199">
+          <caret line="100" column="26" selection-start-line="100" selection-start-column="26" selection-end-line="100" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comparison/sv.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/check_predictions.py">
+    <entry file="file://$PROJECT_DIR$/squad_combiner_add_en.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="94" column="27" lean-forward="true" selection-start-line="94" selection-start-column="27" selection-end-line="94" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aligned.txt">
-      <provider selected="true" editor-type-id="LargeFileEditor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.rtf">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/to_translate_dev_html.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="866" column="197" selection-start-line="866" selection-start-column="14" selection-end-line="866" selection-end-column="197" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/translated dev html.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="866" column="191" selection-start-line="866" selection-start-column="14" selection-end-line="866" selection-end-column="191" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tst2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="19" column="177" lean-forward="true" selection-start-line="18" selection-end-line="19" selection-end-column="177" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/translated dev no answers.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="9517" column="92" selection-start-line="9517" selection-end-line="9517" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/explore4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/original_plus_confident_plus_ot_train_no_impossible.json">
-      <provider selected="true" editor-type-id="LargeFileEditor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train_bert_sv_base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/do_lower_case_train_mlbert_en_plus_sv_plus_ot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/v2_train_mlbert_en_plus_sv_plus_ot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/squad_combiner2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        <state relative-caret-position="238">
+          <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
           <folding>
             <element signature="e#0#70#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/squad_combiner3.py">
+    <entry file="file://$PROJECT_DIR$/run_squad_v2_3.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2_train_mlbert_en_plus_sv_plus_ot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="53" column="33" lean-forward="true" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
+        <state relative-caret-position="102">
+          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cross_qa_downloading.txt">
+    <entry file="file://$PROJECT_DIR$/6th_v2_mlbert_en_plus_newprojfixed_sv.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        <state relative-caret-position="340">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/6th_svbertbase_newprojfixed_sv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="57" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/6th_mlbert_en_plus_newprojfixed_sv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="41" lean-forward="true" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/squad_combiner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/squad_combiner2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="76" column="39" selection-start-line="76" selection-start-column="39" selection-end-line="76" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3rd_mlbert_only_sv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="57" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/explore4_evallist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/squad_combiner_confidenizer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="94" column="28" selection-start-line="94" selection-start-column="28" selection-end-line="94" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/6th_mlbert_en.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spanska plan.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/squad_combiner_proj2_only_sv_proj.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-320">
+          <caret line="22" column="39" lean-forward="true" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spanish_train_to_translate.txt">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="85">
+          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spanish_dev_to_translate.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="2340" column="27" selection-start-line="2340" selection-start-column="27" selection-end-line="2340" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tst3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/squad_combiner_proj_dev.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="70" column="42" lean-forward="true" selection-start-line="70" selection-start-column="42" selection-end-line="70" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/squad_combiner_proj2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="55" column="53" lean-forward="true" selection-start-line="55" selection-start-column="53" selection-end-line="55" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/squad_combiner_proj.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-199">
+          <caret line="63" column="27" lean-forward="true" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/squad_iterator_projection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="217" column="36" lean-forward="true" selection-start-line="217" selection-start-column="36" selection-end-line="217" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/squad_iterator_projection_dev.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="230" column="37" lean-forward="true" selection-start-line="230" selection-start-column="37" selection-end-line="230" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/squad_spanish_preprocessing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/explore3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        <state relative-caret-position="257">
+          <caret line="68" column="8" lean-forward="true" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run_xlm_eval.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/v2_en_eval_mlbert_en_plus_sv_plus_ot.py">
+    <entry file="file://$PROJECT_DIR$/run_squad_inter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/argparse.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="1747" column="8" selection-start-line="1747" selection-start-column="8" selection-end-line="1747" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run_squad.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="352" column="4" selection-start-line="352" selection-start-column="4" selection-end-line="352" selection-end-column="4" />
+        <state relative-caret-position="169">
+          <caret line="586" column="45" lean-forward="true" selection-start-line="586" selection-start-column="45" selection-end-line="586" selection-end-column="45" />
           <folding>
             <element signature="e#811#875#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run_xlm.py">
+    <entry file="file://$PROJECT_DIR$/results/n6th_mlbert_en_plus_newprojfixed_sv .json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        <state>
+          <caret column="15852" lean-forward="true" selection-start-column="15852" selection-end-column="15852" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run_squad_v2_3.py">
+    <entry file="file://$PROJECT_DIR$/results/n6th_v2_mlbert_en_plus_newprojfixed_sv .json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="388" column="20" lean-forward="true" selection-start-line="388" selection-start-column="20" selection-end-line="388" selection-end-column="20" />
-          <folding>
-            <element signature="e#811#875#0" expanded="true" />
-          </folding>
+        <state>
+          <caret column="74" selection-start-column="74" selection-end-column="74" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/train_albert_en.py">
+    <entry file="file://$PROJECT_DIR$/6th_mlbert_sv_plus_ot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="54" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/n6th_mlbert_en.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/n6th_mlbert_en_plus_projfixed_sv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="57" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/n6th_svbertbase_naive_plus_ot_sv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/n6th_svbertbase_naive_sv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/n6th_v2_mlbert_en_plus_newprojfixed_sv.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/squad_combiner_cross_qa.py">
+    <entry file="file://$PROJECT_DIR$/n6th_xlm_en_plus_newprojfixed_sv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/n6th_svbertbase_newprojfixed_sv.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/squad_combiner_cross_qa_only_en.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="126" column="33" selection-start-line="126" selection-start-column="33" selection-end-line="126" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train_mlbert_cross_qa.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train_mlbert_cross_qa_only_en.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="34" lean-forward="true" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eval_mlbert_sv_large.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eval_mlbert_sv.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eval_mlbert_en_plus_sv_plus_ot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results ev_mlbert_en_plus_sv_plus_ot 05.40.09.270718 PM on January 10, 2020.json">
+    <entry file="file://$PROJECT_DIR$/results/n6th_mlbert_en_plus_sv_plus_ot .json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="14" selection-start-column="14" selection-end-column="14" />
+          <caret column="15875" lean-forward="true" selection-start-column="15875" selection-end-column="15875" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/en_eval_mlbert_en_plus_sv_plus_ot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ev_mlbert_en_plus_sv_plus_ot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="5" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train_mlbert_sv_large.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train_mlbert_only_sv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ev_mlbert_only_sv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ev_en_eval_mlbert_en_plus_sv_plus_ot.py">
+    <entry file="file://$PROJECT_DIR$/n6th_mlbert_sv_plus_ot.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="33" />
+          <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ev_mlbert_en_plus_sv_plus_ot_plus_chinese.py">
+    <entry file="file://$PROJECT_DIR$/n6th_mlbert_en_plus_newprojfixed_sv.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        <state relative-caret-position="136">
+          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/even_mlbert_only_sv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="33" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train_mlbert_en_plus_sv.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/even_mlbert_en_plus_sv_plus_ot_plus_chinese.py">
+    <entry file="file://$PROJECT_DIR$/n6th_mlbert_en_plus_sv_plus_ot.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/even_mlbert_en_plus_sv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eval_mlbert_en.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+          <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plot_results.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="59" column="48" selection-start-line="59" selection-start-column="48" selection-end-line="59" selection-end-column="48" />
+        <state relative-caret-position="165">
+          <caret line="238" column="30" lean-forward="true" selection-start-line="238" selection-start-column="30" selection-end-line="238" selection-end-column="30" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/even_mlbert_en.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ev_mlbert_en_plus_sv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ev_mlbert_en.py">
+    <entry file="file://$PROJECT_DIR$/n6th_mlbert_only_newprojfixed_sv.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/6th_mlbert_only_newprojfixed_sv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng6th_mlbert_en.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng6th_mlbert_sv_plus_ot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng6th_mlbert_only_newprojfixed_sv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng6th_mlbert_en_plus_sv_plus_ot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng6th_mlbert_en_plus_newprojfixed_sv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng6th_xlm_en_plus_newprojfixed_sv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
         </state>
       </provider>
     </entry>

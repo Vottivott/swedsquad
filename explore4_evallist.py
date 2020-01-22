@@ -24,6 +24,8 @@ fname = "train-v2.0.json"
 fname = "dev_only_projfixed_sv_no_impossible"
 #fname = "dev_ext_2_ext_5_multialt.json"
 fname ="swe_squad_bert_project_ext_dev.json"
+fname ="swe_squad_bert_project_ext_train_new.json"
+fname ="swe_squad_dev_ot_2020-01-19.json"
 fname ="swe_squad_bert_project_ext_dev_new.json"
 
 
@@ -31,6 +33,7 @@ with open(fname,"r", encoding='utf-8') as f:
     data = json.loads(f.read())['data']
 
 
+en_fname = "train-v2.0.json"
 en_fname = "dev-v2.0.json"
 with open(en_fname,"r", encoding='utf-8') as f:
     en_data = json.loads(f.read())['data']
@@ -77,7 +80,7 @@ for article in data:
         for qa in qas:
             questions.append(qa['question'])
             ids.append(qa['id'])
-            if not qa['is_impossible']:
+            if 'is_impossible' not in qa or not qa['is_impossible']:
                 num_answerable_questions += 1
             #print(qa['question'])
             #print(qa['translated_question'])
@@ -245,26 +248,28 @@ next_index = 200#100#100 (22) # 200: Varför kämpar forskare för att identifie
 errors = []
 
 serious_missing_word_errors = [32] # 'cut off the French frontier forts' / avbröt 'framgångsrikt de franska gränsfortarna'
-benign_errors = [10] # Corrected '185'5 to '1855' probably impossible because 1855 is one token?
-added_word_but_still_good = [95] # high-altitude 'ozone layer' / 'ozonskiktet med hög höjd'
-minor_missing_word_errors = [11, 165] # 'political activity caused exploitation' / orsakade 'politisk verksamhet utnyttjande'
+#benign_errors = [10] # Corrected '185'5 to '1855' probably impossible because 1855 is one token?
+#added_word_but_still_good = [95] # high-altitude 'ozone layer' / 'ozonskiktet med hög höjd'
+#minor_missing_word_errors = [11, 165] # 'political activity caused exploitation' / orsakade 'politisk verksamhet utnyttjande'
 huge_missing_word_errors = [75] # de flesta ord saknas
 correct_answer_wrong_position = []
 correct_answer_wrong_position_but_still_good = []
 minor_missing_letter_logical = [31]
 serious_partial_word_and_added_word = [169] # the insignificance of 'the Ministry of War' / krigsminister'iets obetydlighet'
-partial_word = [115, 174] # 'beroids' / 'beroi'derna
-partial_word_but_still_good = [134, 135, 141]
+partial_word = [174]
+the_related_but_actually_correct = [135]
 minor_missing_symbol = [3]
 minor_added_symbols = [86] # 'empty land' / "tomt land").
 completely_wrong_word = [154] # the 'location' of Warsaw / 'Warsawa's lge
 partial_because_split_too_far_apart_to_make_sense = [183]
 
 complete_error_vars = [completely_wrong_word]
-partial_error_vars = [serious_missing_word_errors, huge_missing_word_errors, serious_partial_word_and_added_word, partial_word]
-impossible_error_vars = [partial_because_split_too_far_apart_to_make_sense]
+partial_error_vars = [serious_missing_word_errors, huge_missing_word_errors, serious_partial_word_and_added_word, partial_word, [95, 11, 134], minor_missing_letter_logical, minor_missing_symbol, minor_added_symbols, [141]]
+impossible_translation_error_vars = [partial_because_split_too_far_apart_to_make_sense, [165]]
+impossible_tokenization_error_vars = [[10, 115]]
 
-ignored_error_vars = [benign_errors, added_word_but_still_good, minor_missing_word_errors, minor_missing_letter_logical, partial_word_but_still_good, minor_missing_symbol, minor_added_symbols, ]
+
+ignored_error_vars = [the_related_but_actually_correct ]
 
 import random
 random.seed(42)
@@ -276,76 +281,95 @@ if next_index > 0:
     #errors = len(serious_missing_word_errors) + len(huge_missing_word_errors) + len(correct_answer_wrong_position) + len(correct_answer_wrong_position_but_still_good)
     c = sum(len(v) for v in complete_error_vars)
     p = sum(len(v) for v in partial_error_vars)
-    i = sum(len(v) for v in impossible_error_vars)
+    imp_trans = sum(len(v) for v in impossible_translation_error_vars)
+    imp_tok = sum(len(v) for v in impossible_tokenization_error_vars)
     ignored = sum(len(v) for v in ignored_error_vars)
-    vars  =[(c,'c'),(p,'p'),(i,'i')]
+    vars  =[(c,'c'),(p,'p'),(imp_trans,'i_trans'),(imp_tok,'i_tok')]
     t = sum(v[0] for v in vars)
     for v,s in vars:
         print("Current error rate %s: %d (%.2f%%)" % (s, v, (100.0*(float(v) / next_index))))
     print("Total error rate: %d (%.2f%%)" % (t, (100.0*(float(t) / next_index))))
 
     print()
-    title = "----- COMPLETE ERRORS (%d) -----------------"
-    title = "----- PARTIAL ERRORS (%d) -----------------"
-    title = "----- IGNORED ERRORS (%d) -----------------"
-    vars = ignored_error_vars
-    print(title % sum(len(v) for v in vars))
-    for v in vars:
-        print()
-        for n in v:
-            qa, a, p, a_i = structured_list[order[n]]
-            qa_en, a_en, p_en = en_questions[(qa['id'], a_i)]
-            # if 'translated_question' not in qa:
-            #    qa['translated_question'] = qa['question']
-            #    a['translated_text'] = a['text']
-            #    translated_context = p['context']
-            # else:
-            translated_context = p['translated_context']
-            # context = p['context']
-            print(qa['question'])
-            print(bcolors.BOLD + str(n) + ": " + qa['translated_question'] + bcolors.ENDC)
-            s = a['answer_start']
-            e = s + len(a['text'])
-            tx = translated_context[:s] + bcolors.FAIL + bcolors.BOLD + translated_context[
-                                                                        s:e] + bcolors.ENDC + translated_context[e:]
-            print(tx)
-            print("( %s%s%s / %s%s%s / %s%s%s )" % (
-                bcolors.BOLD, a['translated_text'], bcolors.ENDC, bcolors.BOLD + bcolors.OKBLUE, a_en['text'],
-                bcolors.ENDC + bcolors.ENDC,
-                bcolors.BOLD + bcolors.FAIL, a['text'],
-                bcolors.ENDC + bcolors.ENDC))
-
-            # print(en_questions.keys())
-            # qa, a, p = en_questions[(qa['id'],a_i)]
-            context = p_en['context']
-
-            s = a_en['answer_start']
-            e = s + len(a_en['text'])
-            tx = context[:s] + bcolors.OKBLUE + bcolors.BOLD + context[
-                                                               s:e] + bcolors.ENDC + context[e:]
-            print(tx)
+    if False:
+        title = "----- COMPLETE ERRORS (%d) -----------------"
+        title = "----- PARTIAL ERRORS (%d) -----------------"
+        title = "----- IGNORED ERRORS (%d) -----------------"
+        vars = ignored_error_vars
+        print(title % sum(len(v) for v in vars))
+        for v in vars:
             print()
+            for n in v:
+                qa, a, p, a_i = structured_list[order[n]]
+                qa_en, a_en, p_en = en_questions[(qa['id'], a_i)]
+                # if 'translated_question' not in qa:
+                #    qa['translated_question'] = qa['question']
+                #    a['translated_text'] = a['text']
+                #    translated_context = p['context']
+                # else:
+                translated_context = p['translated_context']
+                # context = p['context']
+                print(qa['question'])
+                print(bcolors.BOLD + str(n) + ": " + qa['translated_question'] + bcolors.ENDC)
+                s = a['answer_start']
+                e = s + len(a['text'])
+                tx = translated_context[:s] + bcolors.FAIL + bcolors.BOLD + translated_context[
+                                                                            s:e] + bcolors.ENDC + translated_context[e:]
+                print(tx)
+                print("( %s%s%s / %s%s%s / %s%s%s )" % (
+                    bcolors.BOLD, a['translated_text'], bcolors.ENDC, bcolors.BOLD + bcolors.OKBLUE, a_en['text'],
+                    bcolors.ENDC + bcolors.ENDC,
+                    bcolors.BOLD + bcolors.FAIL, a['text'],
+                    bcolors.ENDC + bcolors.ENDC))
+
+                # print(en_questions.keys())
+                # qa, a, p = en_questions[(qa['id'],a_i)]
+                context = p_en['context']
+
+                s = a_en['answer_start']
+                e = s + len(a_en['text'])
+                tx = context[:s] + bcolors.OKBLUE + bcolors.BOLD + context[
+                                                                   s:e] + bcolors.ENDC + context[e:]
+                print(tx)
+                print()
 exit(0)
+next_index = 0
 for i,n in enumerate(order[next_index:200]):
     i+=next_index
     qa, a, p, a_i = structured_list[n]
+    if (qa['id'], a_i) not in en_questions:
+        #print((qa['id'], a_i))
+        print((qa['question'][:30]+"...", a_i))
+        continue
     qa_en, a_en, p_en = en_questions[(qa['id'], a_i)]
     #if 'translated_question' not in qa:
     #    qa['translated_question'] = qa['question']
     #    a['translated_text'] = a['text']
     #    translated_context = p['context']
     #else:
-    translated_context = p['translated_context']
+    if 'translated_context' not in p:
+        translated_context = p['context']
+    else:
+        translated_context = p['translated_context']
+    if 'translated_question' not in qa:
+        translated_question = qa['question']
+    else:
+        translated_question = qa['translated_question']
+    if 'translated_text' not in a:
+        translated_text = a['text']
+    else:
+        translated_text = a['translated_text']
+
     #context = p['context']
     print(qa['question'])
-    print(bcolors.BOLD + str(i) + ": " + qa['translated_question'] + bcolors.ENDC)
+    print(bcolors.BOLD + str(i) + ": " + translated_question + bcolors.ENDC)
     s = a['answer_start']
     e = s + len(a['text'])
     tx = translated_context[:s] + bcolors.FAIL + bcolors.BOLD + translated_context[
                                                                 s:e] + bcolors.ENDC + translated_context[e:]
     print(tx)
     print("( %s%s%s / %s%s%s / %s%s%s )" % (
-        bcolors.BOLD, a['translated_text'], bcolors.ENDC, bcolors.BOLD+bcolors.OKBLUE, a_en['text'], bcolors.ENDC+bcolors.ENDC,
+        bcolors.BOLD, translated_text, bcolors.ENDC, bcolors.BOLD+bcolors.OKBLUE, a_en['text'], bcolors.ENDC+bcolors.ENDC,
         bcolors.BOLD + bcolors.FAIL, a['text'],
         bcolors.ENDC + bcolors.ENDC))
 

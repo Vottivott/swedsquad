@@ -13,9 +13,11 @@ import time
 name ="swe_squad_bert_project"
 name ="swe_squad_bert_project_ext"
 name ="swe_squad_bert_project_ext_dev"
+name ="swe_squad_bert_project_ext_dev_new"
+name ="swe_squad_bert_project_ext_train_new"
 #name ="confident_translated_train"#_no_impossible"
-name_orig ="train-v2.0"
 name_orig = "dev-v2.0"
+name_orig ="train-v2.0"
 #name ="translated train answers translated"
 date = datetime.datetime.now().strftime("%I.%M.%S.%f %p on %B %d, %Y")
 outname = "translated_" + name + " " + date

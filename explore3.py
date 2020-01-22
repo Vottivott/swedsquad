@@ -23,9 +23,38 @@ fname = "cross_qa_no_impossible.json"
 fname = "train-v2.0.json"
 fname = "projection_squad_train.json"
 fname = "projection_squad_ext_2_ext_5_train.json"
-fname = "projection_squad_ext_2_ext_5_train_Swedish.json"
 fname = "swe_squad_bert_project.json"
 fname = "train_en_plus_proj_sv_no_impossible.json"
+fname = "train_en_plus_projfixed_sv_no_impossible.json"
+fname = "projection_squad_ext_2_ext_5_train_sv_context.json"
+fname = "dev_ext_2_ext_5_multialt.json"
+fname = "squad_dev.json"
+fname = "train_en_plus_newprojfixed_sv_no_impossible.json"
+fname = "dev-v2.0.json"
+fname = "dev_only_projfixed_sv_no_impossible.json"
+fname = "dev_only_newprojfixed_sv_no_impossible.json"
+fname = "swe_squad_dev_ot_2020-01-19.json"
+fname = "swe_squad_bert_project_ext_dev_new.json"
+fname = "translated_train_en_plus_newprojfixed_sv_no_impossible 08.03.45.349500 PM on January 19, 2020.json"
+fname = "train_en_plus_newprojfixed_sv_no_impossible.json"
+fname = "train_en_plus_newprojfixed_sv_no_impossible.json"
+fname = "train_only_newprojfixed_sv_no_impossible.json"
+fname = "train_only_newprojfixed_sv_no_impossible.json"
+fname = "train-v2.0.json"
+fname = "confident_translated_train.json"
+fname = "translated train answers translated.json"
+fname = "translated dev answers translated.json"
+fname = "train_only_newprojfixed_sv.json"
+fname = "train_en_plus_newprojfixed_sv.json"
+fname = "dev_only_newprojfixed_sv.json"
+fname = "confident_translated_dev.json"
+fname = "spanish_squad_dev.json"
+fname = "spanish_squad_train.json"
+fname = "squad_train.json"
+fname = "spanish_projection_squad_ext_2_ext_5_train.json"
+fname = "spanish_projection_squad_ext_2_ext_5_train_spanish_context.json"
+fname = "spanish_projection_squad_ext_2_ext_5_dev.json"
+fname = "spanish_projection_squad_ext_2_ext_5_dev_spanish_context.json"
 
 with open(fname,"r", encoding='utf-8') as f:
     data = json.loads(f.read())['data']
@@ -61,7 +90,20 @@ for article in data:
         #print()
         qas = p['qas']
         for qa in qas:
-            questions.append([qa['question'],"SVAR: " + qa['answers'][0]['text']])
+            if True:#qa['is_impossible']:#('is_impossible' not in qa or not qa['is_impossible']) and qa['answers'][0]['text'] not in qa['question']:
+                #questions.append([qa['id'] + "\n" + qa['question'],"SVAR: " + qa['answers'][0]['text']])
+                #questions.append(["\n" + context + "\n" + qa['id'] + "\n" + qa['question'],"SVAR: " + qa['answers'][0]['text']])
+                cntxt = context
+                qstn = qa['question']
+                #cntxt = p['translated_context']
+                #qstn=qa['translated_question']
+                if len(qa['answers']):
+                    answr = qa['answers'][0]['text']
+                    #answr = qa['answers'][0]['translated_text']
+                    questions.append(["\n" + article['title'] + "\n" + cntxt + "\n" + qa['id'] + "\n" + qstn,"SVAR: %s" % answr])
+                else:
+                    questions.append(["\n" + article['title'] + "\n" + cntxt + "\n" + qa['id'] + "\n" + qstn,"SVAR: None"])
+
             #if not qa['is_impossible']:
             #    questions.append([context,qa['translated_question'],"SVAR: " + qa['answers'][0]['text']])
             #questions.append([context,qa['question'],"SVAR: " + qa['answers']['text']])
@@ -142,9 +184,9 @@ for article in data:
 
 
 import random
-random.shuffle(questions)
+#random.shuffle(questions)
 questions = sum(questions[:1000],[])
-print("\n".join(questions[:10]))
+print("\n".join(questions[:100]))
 print("Number of questions: %d" % sum(num_questions))
 print("Number of paragraphs: %d" % len(num_questions))
 print("Avg. num questions per paragraph: %.2f" % (sum(num_questions)/len(num_questions)))

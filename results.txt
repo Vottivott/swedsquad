@@ -7,12 +7,12 @@ Multilingual BERT Base
   sv: f1 = 73.6 (exact = 62.7)
 ---- tränad på eng + naiv sv + ot sv:
  *en: f1 = 88.3
- .sv: f1 = 74.1 (exact = 61.7)
+  sv: f1 = 74.1 (exact = 61.7)
 ---- tränad på eng + naiv sv + ot sv + kinesiska:
   sv: f1 = 74.2 (exact = 61.9)
 ---- tränad på naiv sv:
   en: f1 = 83.3
- .sv: f1 = 72.8 (exact = 62.3)
+  sv: f1 = 72.8 (exact = 62.3)
 ---- tränad på eng fast frågorna är översatta till svenska:
   sv: f1 = 71.7
 

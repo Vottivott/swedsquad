@@ -10,7 +10,6 @@ class bcolors:
 
 import json
 
-fname = "train-v2.0.json"
 #fname = "dev-v2.0.json"
 #fname = 'translated_dev-v2.0 06.35.01.949109 PM on December 06, 2019.json'
 #fname = 'translated_train-v2.0 01.28.26.007134 AM on December 07, 2019.json'
@@ -20,9 +19,17 @@ fname ="translated dev answers translated.json"
 #fname ="confident_translated_dev_no_impossible.json"
 #fname = "original_plus_confident_translated_train_no_impossible.json"
 fname ="swe_squad_bert_project.json"
+fname ="swe_squad_bert_project_ext.json"
+fname = "train-v2.0.json"
+fname = "dev_only_projfixed_sv_no_impossible"
+#fname = "dev_ext_2_ext_5_multialt.json"
+fname ="swe_squad_bert_project_ext_dev.json"
+
 
 with open(fname,"r", encoding='utf-8') as f:
     data = json.loads(f.read())['data']
+
+structured_list = []
 
 questions = []
 num_questions = []
@@ -44,7 +51,10 @@ for article in data:
         num_translated_articles+=1
     for p in article['paragraphs']:
         context = p['context']
-        translated_context = p['translated_context']
+        if 'translated_context' in p:
+            translated_context = p['translated_context']
+        else:
+            translated_context = "None"
         #print(p['context_html_exclude_problematic'])
         #print()
         #print(p['translated_context_html_exclude_problematic'])
@@ -83,9 +93,32 @@ for article in data:
             any_naive_answer = False
             for a in qa['answers']:
 
-                translated_answer_num_ocurrences = translated_context.count(a['translated_text'])
-                translated_answer_cap_num_ocurrences = translated_context.count(a['translated_text'].capitalize())
-                translated_answer_lower_num_ocurrences = translated_context.count(a['translated_text'].lower())
+                # if a['answer_start']+len(a['text']) > len(context) or a['answer_start'] < 0:
+                #     print(a['answer_start'])
+                #     print(a['text'])
+                #     print(len(context))
+                #     #print(context)
+                #     a = qa['answers'][0]
+                #     print(bcolors.BOLD + qa['translated_question'] + bcolors.ENDC)
+                #     s = a['answer_start']
+                #     e = s + len(a['text'])
+                #     tx = translated_context[:s] + bcolors.FAIL + bcolors.BOLD + translated_context[
+                #                                                                 s:e] + bcolors.ENDC + translated_context[
+                #                                                                                       e:]
+                #     print(tx)
+                #     print("(naiv: %s%s%s   proj: %s%s%s)" % (
+                #     bcolors.BOLD, a['translated_text'], bcolors.ENDC, bcolors.BOLD + bcolors.FAIL, a['text'],
+                #     bcolors.ENDC + bcolors.ENDC))
+                #     print()
+
+                if translated_context == 'None':
+                    translated_answer_num_ocurrences = 0
+                    translated_answer_cap_num_ocurrences =0
+                    translated_answer_lower_num_ocurrences=0
+                else:
+                    translated_answer_num_ocurrences = translated_context.count(a['translated_text'])
+                    translated_answer_cap_num_ocurrences = translated_context.count(a['translated_text'].capitalize())
+                    translated_answer_lower_num_ocurrences = translated_context.count(a['translated_text'].lower())
                 if translated_answer_num_ocurrences == 1:
                     num_naive_matches += 1
                     any_naive_answer = True
@@ -117,15 +150,39 @@ for article in data:
                 positions.append((a['answer_start'], a['answer_start'] + len(a['text'])))
             if any_naive_answer:
                 num_naive_matchquestions += 1
-            elif len(qa['answers']):
+            elif False:#len(qa['answers']):
+                for a in qa['answers']:
+                    #a = qa['answers'][0]
+                    print(bcolors.BOLD + qa['translated_question'] + bcolors.ENDC)
+                    s = a['answer_start']
+                    e = s + len(a['text'])
+                    tx = translated_context[:s] + bcolors.FAIL + bcolors.BOLD + translated_context[
+                                                                                s:e] + bcolors.ENDC + translated_context[e:]
+                    print(tx)
+                    print("(naiv: %s%s%s   proj: %s%s%s)" % (bcolors.BOLD,a['translated_text'],bcolors.ENDC,bcolors.BOLD+bcolors.FAIL,a['text'],bcolors.ENDC+bcolors.ENDC))
+                    print()
+
+            for a in qa['answers']:
+                structured_list.append((qa, a, p))
+
+
+
+            if False:#qa['question']=="What formed behind blockages?":#qa['translated_question']=="Vad bildades bakom blockeringar?":#'sjöar' in context:
                 a = qa['answers'][0]
+                if 'translated_question' not in qa:
+                    qa['translated_question'] = qa['question']
+                    a['translated_text'] = a['text']
+                    translated_context = p['context']
+                print(qa['question'])
                 print(bcolors.BOLD + qa['translated_question'] + bcolors.ENDC)
                 s = a['answer_start']
                 e = s + len(a['text'])
                 tx = translated_context[:s] + bcolors.FAIL + bcolors.BOLD + translated_context[
                                                                             s:e] + bcolors.ENDC + translated_context[e:]
                 print(tx)
-                print("(naiv: %s%s%s   proj: %s%s%s)" % (bcolors.BOLD,a['translated_text'],bcolors.ENDC,bcolors.BOLD+bcolors.FAIL,a['text'],bcolors.ENDC+bcolors.ENDC))
+                print("(naiv: %s%s%s   proj: %s%s%s)" % (
+                bcolors.BOLD, a['translated_text'], bcolors.ENDC, bcolors.BOLD + bcolors.FAIL, a['text'],
+                bcolors.ENDC + bcolors.ENDC))
                 print()
 
         for start,end in positions:
@@ -172,7 +229,55 @@ for article in data:
 
 
 import random
-random.shuffle(questions)
+random.seed(42)
+order = list(range(20302))
+random.shuffle(order)
+print(order[:5]) # Should be [7768, 10891, 93, 10620, 8756]
+for i,n in enumerate(order[:1]):
+    qa, a, p = structured_list[i]
+
+    #if 'translated_question' not in qa:
+    #    qa['translated_question'] = qa['question']
+    #    a['translated_text'] = a['text']
+    #    translated_context = p['context']
+    translated_context = p['translated_context']
+    context = p['context']
+    print(qa['question'])
+    print(bcolors.BOLD + str(i) + ": " + qa['translated_question'] + bcolors.ENDC)
+    s = a['answer_start']
+    e = s + len(a['text'])
+    tx = translated_context[:s] + bcolors.FAIL + bcolors.BOLD + translated_context[
+                                                                s:e] + bcolors.ENDC + translated_context[e:]
+    print(tx)
+    print("(naiv: %s%s%s   proj: %s%s%s)" % (
+        bcolors.BOLD, a['translated_text'], bcolors.ENDC, bcolors.BOLD + bcolors.FAIL, a['text'],
+        bcolors.ENDC + bcolors.ENDC))
+    print()
+
+    s = a['answer_start']
+    e = s + len(a['text'])
+    tx = context[:s] + bcolors.FAIL + bcolors.BOLD + context[
+                                                            s:e] + bcolors.ENDC + context[e:]
+
+
+
+
+# a = qa['answers'][0]
+print(bcolors.BOLD + qa['translated_question'] + bcolors.ENDC)
+s = a['answer_start']
+e = s + len(a['text'])
+tx = translated_context[:s] + bcolors.FAIL + bcolors.BOLD + translated_context[
+                                                            s:e] + bcolors.ENDC + translated_context[e:]
+print(tx)
+print("(naiv: %s%s%s   proj: %s%s%s)" % (
+    bcolors.BOLD, a['translated_text'], bcolors.ENDC, bcolors.BOLD + bcolors.FAIL, a['text'],
+    bcolors.ENDC + bcolors.ENDC))
+print()
+
+#random.shuffle(questions)
+
+
+
 #print("\n".join(questions[:1000]))
 print("Number of questions: %d" % sum(num_questions))
 print("Number of paragraphs: %d" % len(num_questions))
