@@ -2,10 +2,10 @@ import run_squad_inter as run_squad
 
 args = """--model_type bert 
     --model_name_or_path bert-base-multilingual-cased
-    --do_train 
-    --evaluate_during_training 
+    --do_eval 
+    --eval_all_checkpoints 
     --train_file train_only_newprojfixed_sv_no_impossible.json
-    --predict_file confident_translated_dev_no_impossible.json
+    --predict_file dev_only_newprojfixed_sv_no_impossible.json
     --learning_rate 5e-6 
     --max_steps 160000 
     --max_seq_length 384 
