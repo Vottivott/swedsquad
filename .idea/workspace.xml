@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57e8f9c5-0331-44c9-8c76-e8a494496ec6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/neweval_6th_mlbert_only_newprojfixed_sv.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spanish_newprojfixed_squad_train.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/squad_combiner_add_spanish_question.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/en_plus_spanish_newprojfixed_squad_train.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spanish_6th_mlbert_en_plus_newprojfixed_es.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spanish_6th_mlbert_newprojfixed_es.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/explore3.py" beforeDir="false" afterPath="$PROJECT_DIR$/explore3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/explore4.py" beforeDir="false" afterPath="$PROJECT_DIR$/explore4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/explore4_evallist.py" beforeDir="false" afterPath="$PROJECT_DIR$/explore4_evallist.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plot_results.py" beforeDir="false" afterPath="$PROJECT_DIR$/plot_results.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,10 +16,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/neweval_6th_mlbert_only_newprojfixed_sv.py">
+        <entry file="file://$PROJECT_DIR$/spanish_6th_mlbert_newprojfixed_es.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+            <state relative-caret-position="153">
+              <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -39,7 +35,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>bildning</find>
       <find>proj_extend_n_words</find>
       <find>cuda</find>
       <find>warsaw</find>
@@ -69,6 +64,7 @@
       <find>#</find>
       <find>only_newproj</find>
       <find>not in</find>
+      <find>sv</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -77,8 +73,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/6th_xlm_en_plus_proj_sv.py" />
-        <option value="$PROJECT_DIR$/squad_combiner_proj2_only_sv_proj.py" />
         <option value="$PROJECT_DIR$/squad_combiner_proj2.py" />
         <option value="$PROJECT_DIR$/6th_mlbert_en_plus_newprojfixed_sv.py" />
         <option value="$PROJECT_DIR$/n6th_mlbert_en_plus_projfixed_sv.py" />
@@ -88,7 +82,6 @@
         <option value="$PROJECT_DIR$/6th_svbertbase_naive_sv.py" />
         <option value="$PROJECT_DIR$/6th_svbertbase_naive_plus_ot_sv.py" />
         <option value="$PROJECT_DIR$/squad_combiner_make_impossible.py" />
-        <option value="$PROJECT_DIR$/squad_combiner_add_en.py" />
         <option value="$PROJECT_DIR$/6th_v2_mlbert_en_plus_newprojfixed_sv.py" />
         <option value="$PROJECT_DIR$/squad_combiner_confidenizer.py" />
         <option value="$PROJECT_DIR$/n6th_mlbert_en_plus_newprojfixed_sv.py" />
@@ -128,6 +121,9 @@
         <option value="$PROJECT_DIR$/squad_combiner_add_spanish_question.py" />
         <option value="$PROJECT_DIR$/plot_results.py" />
         <option value="$PROJECT_DIR$/neweval_6th_mlbert_only_newprojfixed_sv.py" />
+        <option value="$PROJECT_DIR$/squad_combiner_add_en.py" />
+        <option value="$PROJECT_DIR$/spanish_6th_mlbert_en_plus_newprojfixed_es.py" />
+        <option value="$PROJECT_DIR$/spanish_6th_mlbert_newprojfixed_es.py" />
       </list>
     </option>
   </component>
@@ -192,28 +188,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.plot_results">
-    <configuration name="explore4" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="swedsquad" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/explore4.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.squad_combiner_add_en">
     <configuration name="explore4_evallist" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="swedsquad" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -277,6 +252,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="squad_combiner_add_en" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="swedsquad" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/squad_combiner_add_en.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="squad_combiner_add_spanish_question" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="swedsquad" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -299,19 +295,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.explore4" />
       <item itemvalue="Python.explore4_evallist_ot" />
       <item itemvalue="Python.explore4_evallist" />
       <item itemvalue="Python.squad_combiner_add_spanish_question" />
       <item itemvalue="Python.plot_results" />
+      <item itemvalue="Python.squad_combiner_add_en" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.squad_combiner_add_en" />
         <item itemvalue="Python.plot_results" />
         <item itemvalue="Python.squad_combiner_add_spanish_question" />
         <item itemvalue="Python.explore4_evallist" />
         <item itemvalue="Python.explore4_evallist_ot" />
-        <item itemvalue="Python.explore4" />
       </list>
     </recent_temporary>
   </component>
@@ -325,12 +321,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1575589432876</updated>
-    </task>
-    <task id="LOCAL−00047" summary="Add more ev and even scripts">
-      <created>1578845670630</created>
-      <option name="number" value="LOCAL−00047" />
-      <option name="presentableId" value="LOCAL−00047" />
-      <updated>1578845670630</updated>
     </task>
     <task id="LOCAL−00048" summary="Add more ev and even scripts">
       <created>1578924609467</created>
@@ -620,7 +610,13 @@
       <option name="presentableId" value="LOCAL−00095" />
       <updated>1579674194844</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL−00096" summary="Add neweval">
+      <created>1579749867169</created>
+      <option name="number" value="LOCAL−00096" />
+      <option name="presentableId" value="LOCAL−00096" />
+      <updated>1579749867170</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -649,7 +645,6 @@
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fix" />
     <MESSAGE value="en" />
     <MESSAGE value="More" />
     <MESSAGE value="Cross en + projsv" />
@@ -674,7 +669,8 @@
     <MESSAGE value="Old commits" />
     <MESSAGE value="6 en eval" />
     <MESSAGE value="6 sv" />
-    <option name="LAST_COMMIT_MESSAGE" value="6 sv" />
+    <MESSAGE value="Add neweval" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add neweval" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -713,27 +709,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/squad_combiner_proj2_only_sv_proj.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-320">
-          <caret line="22" column="39" lean-forward="true" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spanish_train_to_translate.txt">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="85">
-          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spanish_dev_to_translate.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="2340" column="27" selection-start-line="2340" selection-start-column="27" selection-end-line="2340" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tst3.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1083,8 +1058,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/neweval_6th_mlbert_only_newprojfixed_sv.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        <state relative-caret-position="187">
+          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/squad_combiner_add_en.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="71" column="25" lean-forward="true" selection-start-line="71" selection-start-column="25" selection-end-line="71" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spanish_6th_mlbert_en_plus_newprojfixed_es.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spanish_6th_mlbert_newprojfixed_es.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
         </state>
       </provider>
     </entry>
