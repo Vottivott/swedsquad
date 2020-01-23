@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57e8f9c5-0331-44c9-8c76-e8a494496ec6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/en_plus_spanish_newprojfixed_squad_train.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spanish_6th_mlbert_en_plus_newprojfixed_es.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spanish_6th_mlbert_newprojfixed_es.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xquad.es.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spanish_6th_mlbert_newprojfixed_es.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+            <state relative-caret-position="119">
+              <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -322,12 +320,6 @@
       <option name="presentableId" value="Default" />
       <updated>1575589432876</updated>
     </task>
-    <task id="LOCAL−00048" summary="Add more ev and even scripts">
-      <created>1578924609467</created>
-      <option name="number" value="LOCAL−00048" />
-      <option name="presentableId" value="LOCAL−00048" />
-      <updated>1578924609468</updated>
-    </task>
     <task id="LOCAL−00049" summary="Next gen">
       <created>1578930168453</created>
       <option name="number" value="LOCAL−00049" />
@@ -616,19 +608,24 @@
       <option name="presentableId" value="LOCAL−00096" />
       <updated>1579749867170</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL−00097" summary="Add spanish training">
+      <created>1579750413250</created>
+      <option name="number" value="LOCAL−00097" />
+      <option name="presentableId" value="LOCAL−00097" />
+      <updated>1579750413250</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49747476" visible="true" weight="0.26758286" />
       <window_info id="Structure" order="1" sideWeight="0.50252527" side_tool="true" weight="0.3241714" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32978722" />
-      <window_info anchor="bottom" x="22" y="73" width="1237" height="534" id="Run" maximized="true" order="2" visible="true" weight="0.53368795" />
+      <window_info anchor="bottom" x="22" y="73" width="1237" height="534" id="Run" maximized="true" order="2" visible="true" weight="0.21631205" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.57092196" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -645,7 +642,6 @@
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="en" />
     <MESSAGE value="More" />
     <MESSAGE value="Cross en + projsv" />
     <MESSAGE value="English" />
@@ -670,7 +666,8 @@
     <MESSAGE value="6 en eval" />
     <MESSAGE value="6 sv" />
     <MESSAGE value="Add neweval" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add neweval" />
+    <MESSAGE value="Add spanish training" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add spanish training" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1082,8 +1079,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spanish_6th_mlbert_newprojfixed_es.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        <state relative-caret-position="119">
+          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
         </state>
       </provider>
     </entry>
