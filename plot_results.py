@@ -234,9 +234,11 @@ fnames = [{'model':'Multilingual BERT Base cased', 'experiment': 'tränad på en
           {'model': 'Multilingual BERT Base cased', 'experiment': 'tränad på newprojfixed sv (1/6 lr)',
            'results': {
                'sv': {
-                   'file': get_r('6th_mlbert_only_newprojfixed_sv', latest=True)},
+                   'file': get_r('6th_mlbert_only_newprojfixed_sv', latest=True)}, # (o 3673)
+'sv_n': {
+                   'file': get_r('n6th_mlbert_only_newprojfixed_sv', latest=True)},
                'en': {
-                   'file': get_r('6th_even_mlbert_only_newprojfixed_sv', latest=True)}
+                   'file': get_r('ng6th_even_mlbert_only_newprojfixed_sv', latest=True)}
            }
            },
 
@@ -293,6 +295,8 @@ fnames = [{'model':'Multilingual BERT Base cased', 'experiment': 'tränad på en
                    'file': get_r('e6th_v2_mlbert_en_plus_newprojfixed_sv', latest=True)}
            }
            },
+
+
 
 
 
@@ -424,6 +428,12 @@ for m in fnames:
                 else:
                     plotvar_f1 = "f1"
                     plotvar_em = "exact"
+                if 'f1' not in g:
+                    print(d)
+                    print(exp)
+                    print(g)
+                    print(result['file'])
+                    continue
                 plot(g[plotvar_f1])
                 if ('x' in g[plotvar_f1]):
                     plt.text(g[plotvar_f1]['x'][-1],g[plotvar_f1]['y'][-1],"%.2f" % g[plotvar_f1]['y'][-1])

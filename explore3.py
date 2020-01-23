@@ -55,6 +55,7 @@ fname = "spanish_projection_squad_ext_2_ext_5_train.json"
 fname = "spanish_projection_squad_ext_2_ext_5_train_spanish_context.json"
 fname = "spanish_projection_squad_ext_2_ext_5_dev.json"
 fname = "spanish_projection_squad_ext_2_ext_5_dev_spanish_context.json"
+fname = "es_squad.json"
 
 with open(fname,"r", encoding='utf-8') as f:
     data = json.loads(f.read())['data']

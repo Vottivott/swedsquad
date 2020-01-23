@@ -27,7 +27,7 @@ fname ="swe_squad_bert_project_ext_dev.json"
 fname ="swe_squad_bert_project_ext_train_new.json"
 fname ="swe_squad_dev_ot_2020-01-19.json"
 fname ="swe_squad_bert_project_ext_dev_new.json"
-
+#fname ="es_squad.json"
 
 with open(fname,"r", encoding='utf-8') as f:
     data = json.loads(f.read())['data']
@@ -332,7 +332,7 @@ if next_index > 0:
                                                                    s:e] + bcolors.ENDC + context[e:]
                 print(tx)
                 print()
-exit(0)
+#exit(0)
 next_index = 0
 for i,n in enumerate(order[next_index:200]):
     i+=next_index

@@ -24,6 +24,7 @@ fname = "train-v2.0.json"
 fname = "dev_only_projfixed_sv_no_impossible"
 #fname = "dev_ext_2_ext_5_multialt.json"
 fname ="swe_squad_bert_project_ext_dev.json"
+fname ="es_squad.json"
 
 
 with open(fname,"r", encoding='utf-8') as f:
@@ -64,7 +65,7 @@ for article in data:
         for qa in qas:
             questions.append(qa['question'])
             ids.append(qa['id'])
-            if not qa['is_impossible']:
+            if 'is_impossible' not in qa or not qa['is_impossible']:
                 num_answerable_questions += 1
             #print(qa['question'])
             #print(qa['translated_question'])
