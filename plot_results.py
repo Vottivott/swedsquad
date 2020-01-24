@@ -165,7 +165,7 @@ fnames = [{'model':'Multilingual BERT Base cased', 'experiment': 'tränad på en
                'sv': {
                    'file': get_r('6th_mlbert_sv_plus_ot', latest=True)},
                'sv_n': {
-                   'file': get_r('n6th_mlbert_sv_plus_ot', latest=True)}, # o 3666
+                   'file': get_r('n6th_mlbert_sv_plus_ot', latest=True)},
                'en': {
                    'file': get_r('6th_even_mlbert_sv_plus_ot', latest=True)}
            }
@@ -255,6 +255,8 @@ fnames = [{'model':'Multilingual BERT Base cased', 'experiment': 'tränad på en
            'results': {
                'sv': {
                    'file': get_r('6th_mlbert_en', latest=True)},
+'sv_n': {
+                   'file': get_r('n6th_mlbert_en', latest=True)},
                'en': {
                    'file': get_r('e6th_mlbert_en', latest=True)}
            }
