@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57e8f9c5-0331-44c9-8c76-e8a494496ec6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mlqa_evaluation_v1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/n6th_mlbert_sv_plus_ot .json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spanish_mlqa_6th_mlbert_en_plus_newprojfixed_es.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spanish_mlqa_6th_mlbert_newprojfixed_es.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plot_results.py" beforeDir="false" afterPath="$PROJECT_DIR$/plot_results.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spanish_mlqa_6th_mlbert_en_plus_newprojfixed_es.py" beforeDir="false" afterPath="$PROJECT_DIR$/spanish_mlqa_6th_mlbert_en_plus_newprojfixed_es.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spanish_mlqa_6th_mlbert_newprojfixed_es.py" beforeDir="false" afterPath="$PROJECT_DIR$/spanish_mlqa_6th_mlbert_newprojfixed_es.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,10 +15,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spanish_mlqa_6th_mlbert_en_plus_newprojfixed_es.py">
+        <entry file="file://$PROJECT_DIR$/run_squad_inter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+            <state relative-caret-position="171">
+              <caret line="60" column="66" selection-start-line="60" selection-start-column="52" selection-end-line="60" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -37,7 +34,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>cuda</find>
       <find>warsaw</find>
       <find>beroi</find>
       <find>174</find>
@@ -67,6 +63,7 @@
       <find>not in</find>
       <find>sv</find>
       <find>en</find>
+      <find>script</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -75,8 +72,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/6th_xlm_en_plus_projfixed_sv.py" />
-        <option value="$PROJECT_DIR$/6th_xlm_en_plus_newprojfixed_sv.py" />
         <option value="$PROJECT_DIR$/6th_svbertbase_newprojfixed_sv.py" />
         <option value="$PROJECT_DIR$/6th_svbertbase_naive_sv.py" />
         <option value="$PROJECT_DIR$/6th_svbertbase_naive_plus_ot_sv.py" />
@@ -126,6 +121,8 @@
         <option value="$PROJECT_DIR$/spanish_xquad_6th_mlbert_newprojfixed_es.py" />
         <option value="$PROJECT_DIR$/results/n6th_mlbert_sv_plus_ot .json" />
         <option value="$PROJECT_DIR$/plot_results.py" />
+        <option value="$PROJECT_DIR$/spanish_mlqa_6th_mlbert_newprojfixed_es.py" />
+        <option value="$PROJECT_DIR$/spanish_mlqa_6th_mlbert_en_plus_newprojfixed_es.py" />
       </list>
     </option>
   </component>
@@ -154,6 +151,24 @@
               <item name="swedsquad" type="b2602c69:ProjectViewProjectNode" />
               <item name="swedsquad" type="462c0819:PsiDirectoryNode" />
               <item name="comparison" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="swedsquad" type="b2602c69:ProjectViewProjectNode" />
+              <item name="swedsquad" type="462c0819:PsiDirectoryNode" />
+              <item name="corpora" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="swedsquad" type="b2602c69:ProjectViewProjectNode" />
+              <item name="swedsquad" type="462c0819:PsiDirectoryNode" />
+              <item name="corpora" type="462c0819:PsiDirectoryNode" />
+              <item name="MLQA_V1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="swedsquad" type="b2602c69:ProjectViewProjectNode" />
+              <item name="swedsquad" type="462c0819:PsiDirectoryNode" />
+              <item name="corpora" type="462c0819:PsiDirectoryNode" />
+              <item name="MLQA_V1" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="swedsquad" type="b2602c69:ProjectViewProjectNode" />
@@ -297,11 +312,11 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.explore4_evallist" />
       <item itemvalue="Python.explore4_evallist_ot" />
+      <item itemvalue="Python.explore4_evallist" />
+      <item itemvalue="Python.squad_combiner_add_spanish_question" />
       <item itemvalue="Python.plot_results" />
       <item itemvalue="Python.squad_combiner_add_en" />
-      <item itemvalue="Python.squad_combiner_add_spanish_question" />
     </list>
     <recent_temporary>
       <list>
@@ -323,12 +338,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1575589432876</updated>
-    </task>
-    <task id="LOCAL−00050" summary="Add more ev and even scripts">
-      <created>1578930222242</created>
-      <option name="number" value="LOCAL−00050" />
-      <option name="presentableId" value="LOCAL−00050" />
-      <updated>1578930222244</updated>
     </task>
     <task id="LOCAL−00051" summary="Add more ev and even scripts">
       <created>1578930275453</created>
@@ -618,7 +627,13 @@
       <option name="presentableId" value="LOCAL−00098" />
       <updated>1579753060262</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL−00099" summary="Add mlqa evaluation stuff">
+      <created>1579843907647</created>
+      <option name="number" value="LOCAL−00099" />
+      <option name="presentableId" value="LOCAL−00099" />
+      <updated>1579843907648</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -647,7 +662,6 @@
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Cross en + projsv" />
     <MESSAGE value="English" />
     <MESSAGE value="XLM again" />
     <MESSAGE value="Add newprojfixed" />
@@ -672,7 +686,8 @@
     <MESSAGE value="Add neweval" />
     <MESSAGE value="Add spanish training" />
     <MESSAGE value="Add spanish xquad evaluation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add spanish xquad evaluation" />
+    <MESSAGE value="Add mlqa evaluation stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add mlqa evaluation stuff" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -711,13 +726,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/results/n6th_mlbert_en_plus_newprojfixed_sv .json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="15852" lean-forward="true" selection-start-column="15852" selection-end-column="15852" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/results/n6th_v2_mlbert_en_plus_newprojfixed_sv .json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1060,13 +1068,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spanish_mlqa_6th_mlbert_newprojfixed_es.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/spanish_mlqa_6th_mlbert_en_plus_newprojfixed_es.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        <state relative-caret-position="102">
+          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spanish_mlqa_6th_mlbert_newprojfixed_es.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_squad_inter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="60" column="66" selection-start-line="60" selection-start-column="52" selection-end-line="60" selection-end-column="66" />
         </state>
       </provider>
     </entry>

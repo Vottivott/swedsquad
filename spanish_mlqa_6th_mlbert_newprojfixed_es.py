@@ -4,7 +4,7 @@ args = """--model_type bert
     --model_name_or_path bert-base-multilingual-cased
     --do_eval 
     --train_file spanish_newprojfixed_squad_train.json
-    --predict_file test-context-es-question-es.json
+    --predict_file corpora/MLQA_V1/test/test-context-es-question-es.json
     --learning_rate 5e-6 
     --max_steps 160000 
     --max_seq_length 384 
